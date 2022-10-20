@@ -28,15 +28,20 @@ namespace Deliveroo
             menuItem.Add("Drinks");
             menuItem.Add("Desserts");
 
-            this.splitContainer1.Panel1.Controls.Clear();
+            this.panel1.Controls.Clear();
             int x = 150;
             foreach (string item in menuItem)
             {
                 MenuItems tmp = new MenuItems(item);
                 tmp.Location = new Point(20, x);
-                this.splitContainer1.Panel1.Controls.Add(tmp);
+                this.panel1.Controls.Add(tmp);
                 x += tmp.Size.Height + 5;
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
