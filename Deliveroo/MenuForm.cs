@@ -13,29 +13,24 @@ namespace Deliveroo
     public partial class MenuForm : Form
     {
         int count = 0;
-       
+        Model model;
         public MenuForm()
         {
             
             InitializeComponent();
-           
+            model = new Model();
         }
 
         private void MenuForm_Load(object sender, EventArgs e)
         {
-            List<string> menuItem = new List<string>();
-            menuItem.Add("Meal");
-            menuItem.Add("Burgers");
-            menuItem.Add("Fries");
-            menuItem.Add("Drinks");
-            menuItem.Add("Desserts");
+          
 
            
             int x = 191;
-            foreach (string item in menuItem)
+            foreach (var item in model.CATEGORies)
             {
                Button button1 = new Button();
-                button1.Text = item;
+                button1.Text = item.CATEGORY_NAME.ToString();
                 button1.BackColor = Color.FromArgb(255, 194, 68);
                 button1.Click += Btn_Click;
                 button1.Size = new Size(189, 64);
@@ -52,25 +47,37 @@ namespace Deliveroo
         private void Btn_Click(object sender, EventArgs e)
         {
             int h = 0;
-            if ((sender as Button).Text == "Meal")
+            if ((sender as Button).Text == "Most Selling")
             {
+                var list = model.PRODUCTs.Where(x => x.CATEGORYID == 1);
                 this.panel2.Controls.Clear();
-                for (int i = 0; i < 5; i++)
+
+                foreach (var item in list)
                 {
-                    Product temp = new Product("Double Gorilla Cheesburger Meal ", " burgers and small frehch fries and coke 0.5L", "90 AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
+                    ProductUserControl temp = new ProductUserControl(item.PRODUCT_NAME.ToString(),item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
                     temp.button1.Click += Temp_Click;
                     temp.Location = new Point(0, h);
                     this.panel2.Controls.Add(temp);
                     h += temp.Size.Height + 15;
                 }
+
+                //for (int i = 0; i < 5; i++)
+                //{
+                //    ProductUserControl temp = new ProductUserControl("Double Gorilla Cheesburger Meal ", " burgers and small frehch fries and coke 0.5L", "90 AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
+                //    temp.button1.Click += Temp_Click;
+                //    temp.Location = new Point(0, h);
+                //    this.panel2.Controls.Add(temp);
+                //    h += temp.Size.Height + 15;
+                //}
                
             }
-            else if((sender as Button).Text == "Burgers")
+            else if((sender as Button).Text == "Combo Meals")
             {
+                var list = model.PRODUCTs.Where(x => x.CATEGORYID == 2);
                 this.panel2.Controls.Clear();
-                for (int i = 0; i < 3; i++)
+                foreach (var item in list)
                 {
-                    Product temp = new Product("Double Gorilla Cheesburger ", "Most popular", "30 AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
+                    ProductUserControl temp = new ProductUserControl(item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
                     temp.button1.Click += Temp_Click;
                     temp.Location = new Point(0, h);
                     this.panel2.Controls.Add(temp);
@@ -78,7 +85,7 @@ namespace Deliveroo
                 }
 
             }
-            else if ((sender as Button).Text == "Fries")
+            else if ((sender as Button).Text == "Gorilla Burgers")
             {
               
             }

@@ -72,21 +72,20 @@ namespace Deliveroo
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(256, -3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(342, 747);
+            this.panel1.Size = new System.Drawing.Size(343, 747);
             this.panel1.TabIndex = 5;
             this.panel1.Click += new System.EventHandler(this.Panel1_Click);
             // 
             // panel2
             // 
             this.panel2.AutoScroll = true;
-            this.panel2.Location = new System.Drawing.Point(604, 147);
-            this.panel2.MaximumSize = new System.Drawing.Size(1362, 741);
-            this.panel2.MinimumSize = new System.Drawing.Size(1362, 741);
+            this.panel2.Location = new System.Drawing.Point(631, 147);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1362, 741);
+            this.panel2.Size = new System.Drawing.Size(686, 554);
             this.panel2.TabIndex = 6;
             // 
             // label2
@@ -101,15 +100,15 @@ namespace Deliveroo
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(1362, 741);
-            this.MaximumSize = new System.Drawing.Size(1362, 741);
-            this.MinimumSize = new System.Drawing.Size(1362, 741);
+            this.ClientSize = new System.Drawing.Size(1344, 694);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.MaximumSize = new System.Drawing.Size(1362, 741);
+            this.MinimumSize = new System.Drawing.Size(1362, 741);
             this.Name = "MenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuForm";

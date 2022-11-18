@@ -6,36 +6,32 @@ namespace Deliveroo
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("PRODUCT")]
-    public partial class PRODUCT
+    public partial class DELIVERY_PERSON
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PRODUCT()
+        public DELIVERY_PERSON()
         {
-            LIST_PRODUCTS = new HashSet<LIST_PRODUCTS>();
+            CLIENT_ORDER = new HashSet<CLIENT_ORDER>();
         }
 
-        public int PRODUCTID { get; set; }
+        public int DELIVERY_PERSONID { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string PRODUCT_NAME { get; set; }
+        public string DELIVERY_PERSON_NAME { get; set; }
 
         [Required]
-        [StringLength(100)]
-        public string PRODUCT_SUBSCRIBE { get; set; }
+        [StringLength(80)]
+        public string DELIVERY_PERSON_FULL_ADDRESS { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string URL_PICTURE { get; set; }
+        public string DELIVERY_PERSON_AREA { get; set; }
 
-        public int? CATEGORYID { get; set; }
-
-        public double? PRICE { get; set; }
-
-        public virtual CATEGORY CATEGORY { get; set; }
+        [StringLength(15)]
+        public string DELIVERY_PERSON_CONTACTNUMBER { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<LIST_PRODUCTS> LIST_PRODUCTS { get; set; }
+        public virtual ICollection<CLIENT_ORDER> CLIENT_ORDER { get; set; }
     }
 }
