@@ -14,14 +14,15 @@ namespace Deliveroo
     public partial class MenuForm : Form
     {
         int count = 0;
-        Model model;
-        List<PRODUCT> copy; 
+       private Model model;
+       public List<PRODUCT> copy; 
         public MenuForm()
         {
             
             InitializeComponent();
             model = new Model();
             copy = new List<PRODUCT>();
+           
         }
 
         private void MenuForm_Load(object sender, EventArgs e)

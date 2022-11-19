@@ -13,7 +13,7 @@ namespace Deliveroo
 {
     public partial class Form1 : Form
     {
-       
+       public string login;
         public Form1()
         {
             InitializeComponent();
@@ -48,8 +48,8 @@ namespace Deliveroo
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
-            
+
+            this.login = this.textBox1.Text;
             this.Close();
 
         }

@@ -69,7 +69,6 @@ namespace Deliveroo
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(293, 49);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Login";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox2
@@ -174,7 +173,6 @@ namespace Deliveroo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(952, 703);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button4);
@@ -188,6 +186,7 @@ namespace Deliveroo
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(970, 750);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BJB";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -199,14 +198,14 @@ namespace Deliveroo
 
         #endregion
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox2;
         private PictureBox pictureBox1;
         private Button button2;
         private PictureBox pictureBox2;
         private Button button3;
         private Button button4;
-        private TextBox textBox3;
+        public TextBox textBox3;
         private TextBox textBox4;
     }
 }

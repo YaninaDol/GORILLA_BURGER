@@ -14,11 +14,16 @@ namespace Deliveroo
         [STAThread]
         static void Main()
         {
+           
+           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-            Application.Run(new MenuForm());
-            Application.Run(new Basket());
+            Form1 form1 = new Form1();
+            Application.Run(form1);
+            MenuForm menuForm = new MenuForm();
+            Application.Run(menuForm);
+            Basket basket=new Basket(form1.login,menuForm.copy);
+            Application.Run(basket);
         }
     }
 }
