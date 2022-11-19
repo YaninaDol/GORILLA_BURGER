@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Internal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,11 +15,13 @@ namespace Deliveroo
     {
         int count = 0;
         Model model;
+        List<PRODUCT> copy; 
         public MenuForm()
         {
             
             InitializeComponent();
             model = new Model();
+            copy = new List<PRODUCT>();
         }
 
         private void MenuForm_Load(object sender, EventArgs e)
@@ -46,67 +49,36 @@ namespace Deliveroo
 
         private void Btn_Click(object sender, EventArgs e)
         {
+            int INDX = model.CATEGORies.ToList().Where(x => x.CATEGORY_NAME == (sender as Button).Text).FirstOrDefault().CATEGORYID;
             int h = 0;
-            if ((sender as Button).Text == "Most Selling")
-            {
-                var list = model.PRODUCTs.Where(x => x.CATEGORYID == 1);
+          
+                var list = model.PRODUCTs.Where(x => x.CATEGORYID == INDX);
                 this.panel2.Controls.Clear();
 
-                foreach (var item in list)
-                {
-                    ProductUserControl temp = new ProductUserControl(item.PRODUCT_NAME.ToString(),item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
-                    temp.button1.Click += Temp_Click;
-                    temp.Location = new Point(0, h);
-                    this.panel2.Controls.Add(temp);
-                    h += temp.Size.Height + 15;
-                }
-
-                //for (int i = 0; i < 5; i++)
-                //{
-                //    ProductUserControl temp = new ProductUserControl("Double Gorilla Cheesburger Meal ", " burgers and small frehch fries and coke 0.5L", "90 AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
-                //    temp.button1.Click += Temp_Click;
-                //    temp.Location = new Point(0, h);
-                //    this.panel2.Controls.Add(temp);
-                //    h += temp.Size.Height + 15;
-                //}
-               
-            }
-            else if((sender as Button).Text == "Combo Meals")
+            foreach (var item in list)
             {
-                var list = model.PRODUCTs.Where(x => x.CATEGORYID == 2);
-                this.panel2.Controls.Clear();
-                foreach (var item in list)
-                {
-                    ProductUserControl temp = new ProductUserControl(item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
-                    temp.button1.Click += Temp_Click;
-                    temp.Location = new Point(0, h);
-                    this.panel2.Controls.Add(temp);
-                    h += temp.Size.Height + 15;
-                }
-
-            }
-            else if ((sender as Button).Text == "Gorilla Burgers")
-            {
-              
-            }
-            else if ((sender as Button).Text == "Drinks")
-            {
-
-            }
-            else if ((sender as Button).Text == "Desserts")
-            {
-
+                ProductUserControl temp = new ProductUserControl(item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
+                temp.Name = INDX.ToString();
+                temp.button1.Click += Temp_Click1;
+                temp.Location = new Point(0, h);
+                this.panel2.Controls.Add(temp);
+                h += temp.Size.Height + 15;
             }
         }
 
-        private void Temp_Click(object sender, EventArgs e)
+        private void Temp_Click1(object sender, EventArgs e)
         {
-            //count++;
+           
             this.label2.Font = new Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 
             this.label2.Text = $"В корзине: {++count}  товаров";
-        }
 
+
+            ProductUserControl item = (sender as Button).Parent as ProductUserControl;
+            PRODUCT pRODUCT = new PRODUCT() { PRODUCT_NAME = item.label1.Text, PRODUCT_SUBSCRIBE = item.label2.Text, URL_PICTURE = "", CATEGORYID = Convert.ToInt32(item.Name), PRICE = Convert.ToDouble(item.label3.Text.Remove(item.label3.Text.IndexOf('A'))) };
+        copy.Add(pRODUCT);  
+        }
+      
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -114,11 +86,7 @@ namespace Deliveroo
 
         private void Panel1_Click(object sender, System.EventArgs e)
         {
-            //MessageBox.Show(this.panel1.Controls[0].Name);
-            //Product temp = new Product("Double Gorilla Cheesburger ", "most tasty burger in the woooorld", "30 AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
-            //temp.Location = new Point(20, h);
-            //this.panel2.Controls.Add(temp);
-            //h += 150;
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
