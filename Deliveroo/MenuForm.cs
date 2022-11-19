@@ -72,13 +72,19 @@ namespace Deliveroo
             this.label2.Font = new Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 
             this.label2.Text = $"В корзине: {++count}  товаров";
-
+            this.label2.Click += Label2_Click;
 
             ProductUserControl item = (sender as Button).Parent as ProductUserControl;
             PRODUCT pRODUCT = new PRODUCT() { PRODUCT_NAME = item.label1.Text, PRODUCT_SUBSCRIBE = item.label2.Text, URL_PICTURE = "", CATEGORYID = Convert.ToInt32(item.Name), PRICE = Convert.ToDouble(item.label3.Text.Remove(item.label3.Text.IndexOf('A'))) };
-        copy.Add(pRODUCT);  
+            copy.Add(pRODUCT);  
         }
-      
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+           
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
