@@ -16,9 +16,15 @@ namespace Deliveroo
 
         public int DELIVERY_PERSONID { get; set; }
 
+        public int? DELIVERY_USERID { get; set; }
+
         [Required]
         [StringLength(50)]
         public string DELIVERY_PERSON_NAME { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string DELIVERY_SURNAME { get; set; }
 
         [Required]
         [StringLength(80)]
@@ -33,5 +39,7 @@ namespace Deliveroo
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CLIENT_ORDER> CLIENT_ORDER { get; set; }
+
+        public virtual USER USER { get; set; }
     }
 }

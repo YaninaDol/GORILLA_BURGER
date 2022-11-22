@@ -14,13 +14,13 @@ namespace Deliveroo
     public partial class MenuForm : Form
     {
         int count = 0;
-       private Model model;
-       public List<PRODUCT> copy; 
+        private Controller controller;
+        public List<PRODUCT> copy; 
         public MenuForm()
         {
             
             InitializeComponent();
-            model = new Model();
+            controller = new Controller();  
             copy = new List<PRODUCT>();
            
         }
@@ -31,7 +31,7 @@ namespace Deliveroo
 
            
             int x = 191;
-            foreach (var item in model.CATEGORies)
+            foreach (var item in controller.gorillaBurgerList.CATEGORies)
             {
                Button button1 = new Button();
                 button1.Text = item.CATEGORY_NAME.ToString();
@@ -50,15 +50,18 @@ namespace Deliveroo
 
         private void Btn_Click(object sender, EventArgs e)
         {
-            int INDX = model.CATEGORies.ToList().Where(x => x.CATEGORY_NAME == (sender as Button).Text).FirstOrDefault().CATEGORYID;
+            int INDX = controller.gorillaBurgerList.CATEGORies.ToList().Where(x => x.CATEGORY_NAME == (sender as Button).Text).FirstOrDefault().CATEGORYID;
             int h = 0;
           
-                var list = model.PRODUCTs.Where(x => x.CATEGORYID == INDX);
+                var list = controller.gorillaBurgerList.PRODUCTs.Where(x => x.CATEGORYID == INDX);
                 this.panel2.Controls.Clear();
+
+
+         
 
             foreach (var item in list)
             {
-                ProductUserControl temp = new ProductUserControl(item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
+                ProductUserControl temp = new ProductUserControl(item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED",item.URL_PICTURE.ToString());
                 temp.Name = INDX.ToString();
                 temp.button1.Click += Temp_Click1;
                 temp.Location = new Point(0, h);
@@ -76,7 +79,7 @@ namespace Deliveroo
             this.label2.Click += Label2_Click;
 
             ProductUserControl item = (sender as Button).Parent as ProductUserControl;
-            PRODUCT pRODUCT = new PRODUCT() { PRODUCT_NAME = item.label1.Text, PRODUCT_SUBSCRIBE = item.label2.Text, URL_PICTURE = "", CATEGORYID = Convert.ToInt32(item.Name), PRICE = Convert.ToDouble(item.label3.Text.Remove(item.label3.Text.IndexOf('A'))) };
+            PRODUCT pRODUCT = new PRODUCT() { PRODUCT_NAME = item.label1.Text, PRODUCT_SUBSCRIBE = item.label2.Text, URL_PICTURE = item.pictureBox1.Name.ToString(), CATEGORYID = Convert.ToInt32(item.Name), PRICE = Convert.ToDouble(item.label3.Text.Remove(item.label3.Text.IndexOf('A'))) };
             copy.Add(pRODUCT);  
         }
 

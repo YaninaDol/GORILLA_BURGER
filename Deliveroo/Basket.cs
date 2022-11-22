@@ -14,16 +14,14 @@ namespace Deliveroo
 {
     public partial class Basket : Form
     {
-        private Model model;
-        private string clientLogin;
+        private Controller controller;
         private List<PRODUCT> selectProducts;
-        public Basket(string LOGIN, List<PRODUCT> copy)
+        private USER user;
+        public Basket(USER user, List<PRODUCT> copy)
         {
             InitializeComponent();
-            model = new Model();
-            
-            clientLogin=LOGIN;
-            this.textBox1.Text = clientLogin;
+            controller = new Controller();
+            this.user= user;    
             selectProducts= copy;   
         }
 
@@ -34,10 +32,8 @@ namespace Deliveroo
            string adress = this.textBox3.Text;
            string phone = this.textBox4.Text;
            DELIVERY_PERSON dELIVERY_PERSON=new DELIVERY_PERSON() {DELIVERY_PERSON_NAME= this.textBox1.Text,DELIVERY_PERSON_AREA= this.textBox2.Text,DELIVERY_PERSON_FULL_ADDRESS= this.textBox3.Text,DELIVERY_PERSON_CONTACTNUMBER= this.textBox4.Text };
-          
-            model.DELIVERY_PERSON.Add(dELIVERY_PERSON); 
-            int personId=model.DELIVERY_PERSON.ToList().IndexOf(dELIVERY_PERSON);
-            int clientId=model.CLIENTs.ToList().IndexOf(model.CLIENTs.Where(x=>x.CLIENT_LOGIN== clientLogin).FirstOrDefault());
+            controller.gorillaBurgerList.DELIVERY_PERSON.Add(dELIVERY_PERSON); 
+            int deliveryPersonId= controller.gorillaBurgerList.DELIVERY_PERSON.ToList().IndexOf(dELIVERY_PERSON);
             
             //int clientId = 1;
 
@@ -49,7 +45,7 @@ namespace Deliveroo
             int h = 0;
             foreach (var item in selectProducts)
             {
-                ProductUserControl temp = new ProductUserControl(item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED", Image.FromFile(@"C:\Users\1\Downloads\ezgif.com-gif-maker (7).jpg"));
+                ProductUserControl temp = new ProductUserControl(item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED",item.URL_PICTURE.ToString());
                
                 temp.Location = new Point(0, h);
                 this.panel1.Controls.Add(temp);

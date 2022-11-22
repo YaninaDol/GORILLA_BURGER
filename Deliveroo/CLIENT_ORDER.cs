@@ -12,13 +12,9 @@ namespace Deliveroo
 
         public int CLIENT_ORDERID { get; set; }
 
-        public int? CLIENTID { get; set; }
-
         public int? DELIVERY_PERSONID { get; set; }
 
         public int? LIST_PRODUCTSID { get; set; }
-
-        public virtual CLIENT CLIENT { get; set; }
 
         public virtual DELIVERY_PERSON DELIVERY_PERSON { get; set; }
 
