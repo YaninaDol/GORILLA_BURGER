@@ -245,6 +245,12 @@
     <Compile Include="Basket.Designer.cs">
       <DependentUpon>Basket.cs</DependentUpon>
     </Compile>
+    <Compile Include="BasketUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BasketUserControl.Designer.cs">
+      <DependentUpon>BasketUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="CATEGORY.cs" />
     <Compile Include="CLIENT_ORDER.cs" />
     <Compile Include="Controller.cs" />
@@ -282,6 +288,9 @@
     <Compile Include="USER.cs" />
     <EmbeddedResource Include="Basket.resx">
       <DependentUpon>Basket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasketUserControl.resx">
+      <DependentUpon>BasketUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

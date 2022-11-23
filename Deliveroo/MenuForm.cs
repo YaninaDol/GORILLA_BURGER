@@ -61,7 +61,7 @@ namespace Deliveroo
 
             foreach (var item in list)
             {
-                ProductUserControl temp = new ProductUserControl(item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED",item.URL_PICTURE.ToString());
+                ProductUserControl temp = new ProductUserControl(item.PRODUCTID, item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED",item.URL_PICTURE.ToString());
                 temp.Name = INDX.ToString();
                 temp.button1.Click += Temp_Click1;
                 temp.Location = new Point(0, h);
@@ -79,7 +79,7 @@ namespace Deliveroo
             this.label2.Click += Label2_Click;
 
             ProductUserControl item = (sender as Button).Parent as ProductUserControl;
-            PRODUCT pRODUCT = new PRODUCT() { PRODUCT_NAME = item.label1.Text, PRODUCT_SUBSCRIBE = item.label2.Text, URL_PICTURE = item.pictureBox1.Name.ToString(), CATEGORYID = Convert.ToInt32(item.Name), PRICE = Convert.ToDouble(item.label3.Text.Remove(item.label3.Text.IndexOf('A'))) };
+            PRODUCT pRODUCT = new PRODUCT() {PRODUCTID=item.ID, PRODUCT_NAME = item.label1.Text, PRODUCT_SUBSCRIBE = item.label2.Text, URL_PICTURE = item.pictureBox1.Name.ToString(), CATEGORYID = Convert.ToInt32(item.Name), PRICE = Convert.ToDouble(item.label3.Text.Remove(item.label3.Text.IndexOf('A'))) };
             copy.Add(pRODUCT);  
         }
 

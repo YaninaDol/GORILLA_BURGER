@@ -13,15 +13,18 @@ namespace Deliveroo
 {
     public partial class ProductUserControl : UserControl
     {
-        public ProductUserControl(string name,string subscribe,string price,string img)
+        public int ID;
+        public ProductUserControl(int Id,string name,string subscribe,string price,string img)
         {
           
             InitializeComponent();
+            ID = Id;   
             this.label1.Text = name;
             this.label2.Text = subscribe;
             this.label3.Text = price;
             this.pictureBox1.Image=GetImage(img);
             this.pictureBox1.Name = img;
+
            
            
         }

@@ -15,14 +15,17 @@ namespace Deliveroo
     public partial class Basket : Form
     {
         private Controller controller;
-        private List<PRODUCT> selectProducts;
+        private List<LIST_PRODUCTS> selectProducts;
+        List<PRODUCT> copy;
         private USER user;
         public Basket(USER user, List<PRODUCT> copy)
         {
             InitializeComponent();
             controller = new Controller();
-            this.user= user;    
-            selectProducts= copy;   
+            this.user= user;
+            this.copy = copy;
+            selectProducts = this.getList(this.copy);
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,12 +48,33 @@ namespace Deliveroo
             int h = 0;
             foreach (var item in selectProducts)
             {
-                ProductUserControl temp = new ProductUserControl(item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED",item.URL_PICTURE.ToString());
-               
+               BasketUserControl temp=new BasketUserControl(copy.ToList().Where(x=>x.PRODUCTID==item.PRODUCTID).FirstOrDefault().PRODUCT_NAME,item.COUNT,Convert.ToDouble( copy.ToList().Where(x => x.PRODUCTID == item.PRODUCTID).FirstOrDefault().PRICE));
                 temp.Location = new Point(0, h);
                 this.panel1.Controls.Add(temp);
                 h += temp.Size.Height + 15;
             }
+        }
+
+        private List<LIST_PRODUCTS> getList(List<PRODUCT> copy)
+
+        {
+            selectProducts = new List<LIST_PRODUCTS>();
+            foreach (var item in copy)
+            {
+
+                if(selectProducts.Contains(selectProducts.ToList().Where(x => x.PRODUCTID == item.PRODUCTID).FirstOrDefault()))
+                {
+                    selectProducts.ToList().Where(x => x.PRODUCTID == item.PRODUCTID).FirstOrDefault().COUNT += 1;
+                }
+                else
+                {
+                    selectProducts.Add(new LIST_PRODUCTS() { PRODUCTID = item.PRODUCTID, COUNT = 1 });
+
+                }
+            }
+
+            return selectProducts;
+           
         }
     }
 }
