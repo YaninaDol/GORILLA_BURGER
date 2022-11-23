@@ -40,9 +40,9 @@
             // 
             this.Named.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Named.ForeColor = System.Drawing.Color.Orange;
-            this.Named.Location = new System.Drawing.Point(3, 13);
+            this.Named.Location = new System.Drawing.Point(3, 0);
             this.Named.Name = "Named";
-            this.Named.Size = new System.Drawing.Size(228, 28);
+            this.Named.Size = new System.Drawing.Size(228, 76);
             this.Named.TabIndex = 2;
             this.Named.Text = "Name";
             // 
@@ -106,7 +106,7 @@
             this.Controls.Add(this.count);
             this.Controls.Add(this.Named);
             this.Name = "BasketUserControl";
-            this.Size = new System.Drawing.Size(574, 60);
+            this.Size = new System.Drawing.Size(574, 76);
             this.ResumeLayout(false);
 
         }
@@ -116,8 +116,8 @@
         public System.Windows.Forms.Label Named;
         public System.Windows.Forms.Label count;
         public System.Windows.Forms.Label Price;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button button3;
     }
 }

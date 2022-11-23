@@ -12,9 +12,11 @@ namespace Deliveroo
 {
     public partial class BasketUserControl : UserControl
     {
-        public BasketUserControl(string Name,int Count,double Price)
+        public int INDX;
+        public BasketUserControl(int Id,string Name,int Count,double Price)
         {
             InitializeComponent();
+            INDX = Id;    
             this.Named.Text= Name;
             this.count.Text = Count.ToString();
             if (Count > 1)

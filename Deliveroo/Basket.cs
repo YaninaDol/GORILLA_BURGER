@@ -48,10 +48,74 @@ namespace Deliveroo
             int h = 0;
             foreach (var item in selectProducts)
             {
-               BasketUserControl temp=new BasketUserControl(copy.ToList().Where(x=>x.PRODUCTID==item.PRODUCTID).FirstOrDefault().PRODUCT_NAME,item.COUNT,Convert.ToDouble( copy.ToList().Where(x => x.PRODUCTID == item.PRODUCTID).FirstOrDefault().PRICE));
+               BasketUserControl temp=new BasketUserControl(Convert.ToInt32(item.PRODUCTID), copy.ToList().Where(x=>x.PRODUCTID==item.PRODUCTID).FirstOrDefault().PRODUCT_NAME,item.COUNT,Convert.ToDouble( copy.ToList().Where(x => x.PRODUCTID == item.PRODUCTID).FirstOrDefault().PRICE));
                 temp.Location = new Point(0, h);
+                temp.button1.Click += Button1_Click;
+                temp.button2.Click += Button2_Click;
+                temp.button3.Click += UC_Button3_Click;
                 this.panel1.Controls.Add(temp);
-                h += temp.Size.Height + 15;
+                h += temp.Size.Height + 10;
+            }
+        }
+
+        private void UC_Button3_Click(object sender, EventArgs e)
+        {
+            selectProducts.Where(x => x.PRODUCTID == ((sender as Button).Parent as BasketUserControl).INDX).FirstOrDefault().COUNT += 1;
+            this.panel1.Controls.Clear();
+
+            int h = 0;
+            foreach (var item in selectProducts)
+            {
+                BasketUserControl temp = new BasketUserControl(Convert.ToInt32(item.PRODUCTID), copy.ToList().Where(x => x.PRODUCTID == item.PRODUCTID).FirstOrDefault().PRODUCT_NAME, item.COUNT, Convert.ToDouble(copy.ToList().Where(x => x.PRODUCTID == item.PRODUCTID).FirstOrDefault().PRICE));
+                temp.Location = new Point(0, h);
+                temp.button1.Click += Button1_Click;
+                temp.button2.Click += Button2_Click;
+                temp.button3.Click += UC_Button3_Click;
+                this.panel1.Controls.Add(temp);
+                h += temp.Size.Height + 10;
+            }
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            if (selectProducts.Where(x => x.PRODUCTID == ((sender as Button).Parent as BasketUserControl).INDX).FirstOrDefault().COUNT > 1)
+            {
+                selectProducts.Where(x => x.PRODUCTID == ((sender as Button).Parent as BasketUserControl).INDX).FirstOrDefault().COUNT -= 1;
+
+                this.panel1.Controls.Clear();
+                int h = 0;
+
+                foreach (var item in selectProducts)
+                {
+                    BasketUserControl temp = new BasketUserControl(Convert.ToInt32(item.PRODUCTID), copy.ToList().Where(x => x.PRODUCTID == item.PRODUCTID).FirstOrDefault().PRODUCT_NAME, item.COUNT, Convert.ToDouble(copy.ToList().Where(x => x.PRODUCTID == item.PRODUCTID).FirstOrDefault().PRICE));
+                    temp.Location = new Point(0, h);
+                    temp.button1.Click += Button1_Click;
+                    temp.button2.Click += Button2_Click;
+                    temp.button3.Click += UC_Button3_Click;
+                    this.panel1.Controls.Add(temp);
+                    h += temp.Size.Height + 10;
+                }
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+         
+           
+              selectProducts.Remove(selectProducts.Where(x => x.PRODUCTID == ((sender as Button).Parent as BasketUserControl).INDX).FirstOrDefault());
+
+            this.panel1.Controls.Clear();
+            int h = 0;
+
+            foreach (var item in selectProducts)
+            {
+                BasketUserControl temp = new BasketUserControl(Convert.ToInt32(item.PRODUCTID), copy.ToList().Where(x => x.PRODUCTID == item.PRODUCTID).FirstOrDefault().PRODUCT_NAME, item.COUNT, Convert.ToDouble(copy.ToList().Where(x => x.PRODUCTID == item.PRODUCTID).FirstOrDefault().PRICE));
+                temp.Location = new Point(0, h);
+                temp.button1.Click += Button1_Click;
+                temp.button2.Click += Button2_Click;
+                temp.button3.Click += UC_Button3_Click;
+                this.panel1.Controls.Add(temp);
+                h += temp.Size.Height + 10;
             }
         }
 

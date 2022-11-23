@@ -47,7 +47,7 @@ namespace Deliveroo
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackColor = System.Drawing.Color.Silver;
             this.button1.Cursor = System.Windows.Forms.Cursors.Default;
             this.button1.Font = new System.Drawing.Font("MV Boli", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(570, 389);
@@ -74,6 +74,7 @@ namespace Deliveroo
             // 
             // textBox2
             // 
+            this.textBox2.BorderStyle = BorderStyle.Fixed3D;
             this.textBox2.AcceptsTab = true;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
@@ -83,6 +84,7 @@ namespace Deliveroo
             this.textBox2.Size = new System.Drawing.Size(293, 49);
             this.textBox2.TabIndex = 3;
             this.textBox2.Text = "Password";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
             // 
@@ -98,7 +100,7 @@ namespace Deliveroo
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackColor = System.Drawing.Color.Silver;
             this.button2.Font = new System.Drawing.Font("MV Boli", 10.8F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(750, 389);
             this.button2.Name = "button2";
@@ -165,7 +167,7 @@ namespace Deliveroo
             this.MinimumSize = new System.Drawing.Size(970, 770);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BJB";
+            this.Text = "Gorilla Burger";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

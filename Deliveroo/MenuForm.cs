@@ -77,6 +77,7 @@ namespace Deliveroo
 
             this.label2.Text = $"В корзине: {++count}  товаров";
             this.label2.Click += Label2_Click;
+            this.button2.Visible = true;
 
             ProductUserControl item = (sender as Button).Parent as ProductUserControl;
             PRODUCT pRODUCT = new PRODUCT() {PRODUCTID=item.ID, PRODUCT_NAME = item.label1.Text, PRODUCT_SUBSCRIBE = item.label2.Text, URL_PICTURE = item.pictureBox1.Name.ToString(), CATEGORYID = Convert.ToInt32(item.Name), PRICE = Convert.ToDouble(item.label3.Text.Remove(item.label3.Text.IndexOf('A'))) };
@@ -85,7 +86,7 @@ namespace Deliveroo
 
         private void Label2_Click(object sender, EventArgs e)
         {
-            this.Close();
+           
            
         }
 
@@ -102,6 +103,11 @@ namespace Deliveroo
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
