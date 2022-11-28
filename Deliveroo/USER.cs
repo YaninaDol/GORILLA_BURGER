@@ -13,6 +13,7 @@ namespace Deliveroo
         public USER()
         {
             DELIVERY_PERSON = new HashSet<DELIVERY_PERSON>();
+            LIST_PRODUCTS = new HashSet<LIST_PRODUCTS>();
         }
 
         public int USERID { get; set; }
@@ -27,6 +28,9 @@ namespace Deliveroo
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DELIVERY_PERSON> DELIVERY_PERSON { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<LIST_PRODUCTS> LIST_PRODUCTS { get; set; }
 
         public virtual ROLE ROLE { get; set; }
     }

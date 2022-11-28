@@ -8,14 +8,14 @@ namespace Deliveroo
     public partial class GorillaBurgerModel : DbContext
     {
         public GorillaBurgerModel()
-            : base("name=GorillaBurgerModel1")
+            : base("name=GorillaBurgerModel3")
         {
         }
 
         public virtual DbSet<CATEGORY> CATEGORies { get; set; }
         public virtual DbSet<CLIENT_ORDER> CLIENT_ORDER { get; set; }
-        public virtual DbSet<DELIVERY_PERSON> DELIVERY_PERSON { get; set; }
-        public virtual DbSet<LIST_PRODUCTS> LIST_PRODUCTS { get; set; }
+        public virtual DbSet<DELIVERY_PERSON> DELIVERY_PERSONS { get; set; }
+        public virtual DbSet<LIST_PRODUCTS> LIST_PRODUCTSS { get; set; }
         public virtual DbSet<PRODUCT> PRODUCTs { get; set; }
         public virtual DbSet<ROLE> ROLEs { get; set; }
         public virtual DbSet<USER> USERs { get; set; }
@@ -30,9 +30,7 @@ namespace Deliveroo
                 .Property(e => e.DELIVERY_PERSON_NAME)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<DELIVERY_PERSON>()
-                .Property(e => e.DELIVERY_SURNAME)
-                .IsUnicode(false);
+          
 
             modelBuilder.Entity<DELIVERY_PERSON>()
                 .Property(e => e.DELIVERY_PERSON_FULL_ADDRESS)
@@ -54,10 +52,6 @@ namespace Deliveroo
                 .Property(e => e.PRODUCT_SUBSCRIBE)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<PRODUCT>()
-                .Property(e => e.URL_PICTURE)
-                .IsUnicode(false);
-
             modelBuilder.Entity<ROLE>()
                 .Property(e => e.ROLE_NAME)
                 .IsUnicode(false);
@@ -66,6 +60,11 @@ namespace Deliveroo
                 .HasMany(e => e.DELIVERY_PERSON)
                 .WithOptional(e => e.USER)
                 .HasForeignKey(e => e.DELIVERY_USERID);
+
+            modelBuilder.Entity<USER>()
+                .HasMany(e => e.LIST_PRODUCTS)
+                .WithOptional(e => e.USER)
+                .HasForeignKey(e => e.USER_ID);
         }
     }
 }

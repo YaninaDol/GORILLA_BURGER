@@ -23,10 +23,6 @@ namespace Deliveroo
         public string DELIVERY_PERSON_NAME { get; set; }
 
         [Required]
-        [StringLength(50)]
-        public string DELIVERY_SURNAME { get; set; }
-
-        [Required]
         [StringLength(80)]
         public string DELIVERY_PERSON_FULL_ADDRESS { get; set; }
 

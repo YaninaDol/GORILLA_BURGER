@@ -30,27 +30,38 @@ namespace Deliveroo
 
         private void button1_Click(object sender, EventArgs e)
         {
-           //string name=this.textBox1.Text;
-           //string area = this.textBox2.Text;
-           //string adress = this.textBox3.Text;
-           //string phone = this.textBox4.Text;
-           //DELIVERY_PERSON dELIVERY_PERSON=new DELIVERY_PERSON() {DELIVERY_PERSON_NAME= this.textBox1.Text,DELIVERY_PERSON_AREA= this.textBox2.Text,DELIVERY_PERSON_FULL_ADDRESS= this.textBox3.Text,DELIVERY_PERSON_CONTACTNUMBER= this.textBox4.Text };
-           // controller.gorillaBurgerList.DELIVERY_PERSONS.Add(dELIVERY_PERSON); 
-           //int deliveryPersonId= controller.gorillaBurgerList.DELIVERY_PERSONS.ToList().IndexOf(dELIVERY_PERSON);
+            string name = this.textBox1.Text;
+            string area = this.textBox2.Text;
+            string adress = this.textBox3.Text;
+            string phone = this.textBox4.Text;
+            int deliveryPersonId;
+            DELIVERY_PERSON dELIVERY_PERSON = new DELIVERY_PERSON() {DELIVERY_USERID=this.user.USERID, DELIVERY_PERSON_NAME = this.textBox1.Text, DELIVERY_PERSON_AREA = this.textBox2.Text, DELIVERY_PERSON_FULL_ADDRESS = this.textBox3.Text, DELIVERY_PERSON_CONTACTNUMBER = this.textBox4.Text };
+             if(controller.gorillaBurgerList.DELIVERY_PERSONS.ToList().Contains(dELIVERY_PERSON))
+            {
+                
+            }
+             else
+            {
+                controller.gorillaBurgerList.DELIVERY_PERSONS.Add(dELIVERY_PERSON);
+                controller.gorillaBurgerList.SaveChanges();
+               
+            }
+           
 
-           // foreach (var item in selectProducts)
-           // {
-           //     LIST_PRODUCTS items = new LIST_PRODUCTS() { PRODUCTID = item.PRODUCTID, COUNT = item.COUNT };
-           //     controller.gorillaBurgerList.LIST_PRODUCTSS.Add(items);
-           // }
+            foreach (var item in selectProducts)
+            {
+                LIST_PRODUCTS items = new LIST_PRODUCTS() {USER_ID=this.user.USERID, PRODUCTID = item.PRODUCTID, COUNT = item.COUNT };
+                controller.gorillaBurgerList.LIST_PRODUCTSS.Add(items);
+                controller.gorillaBurgerList.SaveChanges();
+               
+                controller.gorillaBurgerList.CLIENT_ORDER.Add(new CLIENT_ORDER() { ORDERTIME = DateTime.Now, DELIVERY_PERSONID = dELIVERY_PERSON.DELIVERY_PERSONID, LIST_PRODUCTSID = items.LIST_PRODUCTSID });
+                controller.gorillaBurgerList.SaveChanges();
+            }
 
-
-            LIST_PRODUCTS items1 = new LIST_PRODUCTS() { PRODUCTID =48, COUNT = 1 };
-          
-            controller.gorillaBurgerList.LIST_PRODUCTS.Add(items1);
-          
-
-            controller.gorillaBurgerList.SaveChanges(); 
+           
+            MessageBox.Show("WAIT YOUR ORDER");
+            this.Close();
+            
         }
 
         private void Basket_Load(object sender, EventArgs e)

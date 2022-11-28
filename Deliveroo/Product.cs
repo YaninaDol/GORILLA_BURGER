@@ -25,8 +25,6 @@ namespace Deliveroo
         [StringLength(100)]
         public string PRODUCT_SUBSCRIBE { get; set; }
 
-        [Required]
-        [StringLength(50)]
         public string URL_PICTURE { get; set; }
 
         public int? CATEGORYID { get; set; }

@@ -20,9 +20,13 @@ namespace Deliveroo
 
         public int COUNT { get; set; }
 
+        public int? USER_ID { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CLIENT_ORDER> CLIENT_ORDER { get; set; }
 
         public virtual PRODUCT PRODUCT { get; set; }
+
+        public virtual USER USER { get; set; }
     }
 }
