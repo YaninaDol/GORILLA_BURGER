@@ -19,9 +19,9 @@ namespace Deliveroo
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Form1 form1 = new Form1();
-            Application.Run(form1);
+           // Application.Run(form1);
             MenuForm menuForm = new MenuForm();
-            Application.Run(menuForm);
+           // Application.Run(menuForm);
             Basket basket=new Basket(form1.user,menuForm.copy);
             Application.Run(basket);
         }

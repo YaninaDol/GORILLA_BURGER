@@ -41,15 +41,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Total = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.Location = new System.Drawing.Point(0, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(673, 670);
+            this.panel1.Size = new System.Drawing.Size(673, 568);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox2
@@ -170,12 +172,21 @@
             this.label1.Text = "NAME";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // Total
+            // 
+            this.Total.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Total.Location = new System.Drawing.Point(413, 592);
+            this.Total.Name = "Total";
+            this.Total.Size = new System.Drawing.Size(235, 53);
+            this.Total.TabIndex = 2;
+            // 
             // Basket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(1344, 694);
+            this.Controls.Add(this.Total);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MaximumSize = new System.Drawing.Size(1362, 741);
@@ -205,5 +216,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Total;
     }
 }
