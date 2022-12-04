@@ -40,35 +40,30 @@ namespace ADMIN_GORILLA_BURGER
 
         }
 
-       
 
-        private void materialFlatButton1_Click_1(object sender, EventArgs e)
-        {
-            this.cLIENT_ORDERTableAdapter.Update(this.db_a8ec30_yanina001DataSet.CLIENT_ORDER);
-        }
-
-        private void materialFlatButton2_Click(object sender, EventArgs e)
-        {
-            this.uSERTableAdapter.Update(this.db_a8ec30_yanina001DataSet.USER);
-
-        }
-
-        private void materialFlatButton3_Click(object sender, EventArgs e)
-        {
-            this.pRODUCTTableAdapter.Update(this.db_a8ec30_yanina001DataSet.PRODUCT);
-
-        }
-
-        private void materialFlatButton4_Click(object sender, EventArgs e)
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
             this.lIST_PRODUCTSTableAdapter.Update(this.db_a8ec30_yanina001DataSet.LIST_PRODUCTS);
-
         }
 
-        private void materialFlatButton5_Click(object sender, EventArgs e)
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
             this.dELIVERY_PERSONTableAdapter.Update(this.db_a8ec30_yanina001DataSet.DELIVERY_PERSON);
+        }
 
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
+        {
+            this.uSERTableAdapter.Update(this.db_a8ec30_yanina001DataSet.USER);
+        }
+
+        private void materialRaisedButton4_Click(object sender, EventArgs e)
+        {
+            this.pRODUCTTableAdapter.Update(this.db_a8ec30_yanina001DataSet.PRODUCT);
+        }
+
+        private void materialRaisedButton5_Click(object sender, EventArgs e)
+        {
+            this.cLIENT_ORDERTableAdapter.Update(this.db_a8ec30_yanina001DataSet.CLIENT_ORDER);
         }
     }
 }

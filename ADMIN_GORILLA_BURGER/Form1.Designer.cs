@@ -55,8 +55,6 @@ namespace ADMIN_GORILLA_BURGER
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pRODUCTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pRODUCTTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.PRODUCTTableAdapter();
@@ -66,7 +64,6 @@ namespace ADMIN_GORILLA_BURGER
             this.uRLPICTUREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cATEGORYIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRICEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materialFlatButton3 = new MaterialSkin.Controls.MaterialFlatButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
@@ -76,7 +73,6 @@ namespace ADMIN_GORILLA_BURGER
             this.pRODUCTIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cOUNTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uSERIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materialFlatButton4 = new MaterialSkin.Controls.MaterialFlatButton();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.dELIVERYPERSONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dELIVERY_PERSONTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.DELIVERY_PERSONTableAdapter();
@@ -87,7 +83,11 @@ namespace ADMIN_GORILLA_BURGER
             this.dELIVERYPERSONAREADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dELIVERYPERSONBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.materialFlatButton5 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -121,30 +121,30 @@ namespace ADMIN_GORILLA_BURGER
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(837, 574);
+            this.tabControl1.Size = new System.Drawing.Size(852, 574);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tabPage2.Controls.Add(this.materialFlatButton2);
+            this.tabPage2.Controls.Add(this.materialRaisedButton3);
             this.tabPage2.Controls.Add(this.dataGridView2);
             this.tabPage2.ImageKey = "user-add-icon.png";
             this.tabPage2.Location = new System.Drawing.Point(4, 39);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(829, 531);
+            this.tabPage2.Size = new System.Drawing.Size(844, 531);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "USER";
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tabPage3.Controls.Add(this.materialFlatButton3);
+            this.tabPage3.Controls.Add(this.materialRaisedButton4);
             this.tabPage3.Controls.Add(this.dataGridView1);
             this.tabPage3.ImageKey = "aafdea1e25408dc9e20307a7762f8c2f.jpg";
             this.tabPage3.Location = new System.Drawing.Point(4, 39);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(829, 531);
+            this.tabPage3.Size = new System.Drawing.Size(844, 531);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "PRODUCT";
             // 
@@ -160,12 +160,12 @@ namespace ADMIN_GORILLA_BURGER
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tabPage4.Controls.Add(this.materialFlatButton1);
+            this.tabPage4.Controls.Add(this.materialRaisedButton5);
             this.tabPage4.Controls.Add(this.dataGridView3);
             this.tabPage4.ImageKey = "new-product-icon-9.jpg";
             this.tabPage4.Location = new System.Drawing.Point(4, 39);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(829, 531);
+            this.tabPage4.Size = new System.Drawing.Size(844, 531);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "ORDER";
             // 
@@ -199,7 +199,7 @@ namespace ADMIN_GORILLA_BURGER
             this.uSERPASSWORDDataGridViewTextBoxColumn,
             this.rOLEIDDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.uSERBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(108, 25);
+            this.dataGridView2.Location = new System.Drawing.Point(149, 37);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
@@ -260,11 +260,11 @@ namespace ADMIN_GORILLA_BURGER
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.dataGridView3.DataSource = this.cLIENTORDERBindingSource;
-            this.dataGridView3.Location = new System.Drawing.Point(29, 31);
+            this.dataGridView3.Location = new System.Drawing.Point(88, 65);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(687, 372);
+            this.dataGridView3.Size = new System.Drawing.Size(682, 372);
             this.dataGridView3.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -308,44 +308,6 @@ namespace ADMIN_GORILLA_BURGER
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.Width = 125;
             // 
-            // materialFlatButton1
-            // 
-            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
-            this.materialFlatButton1.FlatAppearance.BorderSize = 300;
-            this.materialFlatButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialFlatButton1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialFlatButton1.Location = new System.Drawing.Point(271, 432);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = true;
-            this.materialFlatButton1.Size = new System.Drawing.Size(294, 61);
-            this.materialFlatButton1.TabIndex = 2;
-            this.materialFlatButton1.Text = "Save changes";
-            this.materialFlatButton1.UseVisualStyleBackColor = true;
-            this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click_1);
-            // 
-            // materialFlatButton2
-            // 
-            this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton2.Depth = 0;
-            this.materialFlatButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
-            this.materialFlatButton2.FlatAppearance.BorderSize = 3;
-            this.materialFlatButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialFlatButton2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialFlatButton2.Location = new System.Drawing.Point(318, 441);
-            this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton2.Name = "materialFlatButton2";
-            this.materialFlatButton2.Primary = true;
-            this.materialFlatButton2.Size = new System.Drawing.Size(222, 54);
-            this.materialFlatButton2.TabIndex = 3;
-            this.materialFlatButton2.Text = "Save changes";
-            this.materialFlatButton2.UseVisualStyleBackColor = true;
-            this.materialFlatButton2.Click += new System.EventHandler(this.materialFlatButton2_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
@@ -359,11 +321,11 @@ namespace ADMIN_GORILLA_BURGER
             this.cATEGORYIDDataGridViewTextBoxColumn,
             this.pRICEDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.pRODUCTBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 57);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 52);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(813, 407);
+            this.dataGridView1.Size = new System.Drawing.Size(809, 407);
             this.dataGridView1.TabIndex = 2;
             // 
             // pRODUCTBindingSource
@@ -424,43 +386,24 @@ namespace ADMIN_GORILLA_BURGER
             this.pRICEDataGridViewTextBoxColumn.Name = "pRICEDataGridViewTextBoxColumn";
             this.pRICEDataGridViewTextBoxColumn.Width = 125;
             // 
-            // materialFlatButton3
-            // 
-            this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton3.Depth = 0;
-            this.materialFlatButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
-            this.materialFlatButton3.FlatAppearance.BorderSize = 3;
-            this.materialFlatButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialFlatButton3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialFlatButton3.Location = new System.Drawing.Point(321, 484);
-            this.materialFlatButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton3.Name = "materialFlatButton3";
-            this.materialFlatButton3.Primary = true;
-            this.materialFlatButton3.Size = new System.Drawing.Size(139, 36);
-            this.materialFlatButton3.TabIndex = 4;
-            this.materialFlatButton3.Text = "Save changes";
-            this.materialFlatButton3.UseVisualStyleBackColor = true;
-            this.materialFlatButton3.Click += new System.EventHandler(this.materialFlatButton3_Click);
-            // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.materialFlatButton5);
+            this.tabPage1.Controls.Add(this.materialRaisedButton2);
             this.tabPage1.Controls.Add(this.dataGridView5);
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(829, 531);
+            this.tabPage1.Size = new System.Drawing.Size(844, 531);
             this.tabPage1.TabIndex = 4;
             this.tabPage1.Text = "DELIVERY PERSON";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.materialFlatButton4);
+            this.tabPage5.Controls.Add(this.materialRaisedButton1);
             this.tabPage5.Controls.Add(this.dataGridView4);
             this.tabPage5.Location = new System.Drawing.Point(4, 39);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(829, 531);
+            this.tabPage5.Size = new System.Drawing.Size(844, 531);
             this.tabPage5.TabIndex = 5;
             this.tabPage5.Text = "LIST PRODUCTS";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -525,25 +468,6 @@ namespace ADMIN_GORILLA_BURGER
             this.uSERIDDataGridViewTextBoxColumn1.Name = "uSERIDDataGridViewTextBoxColumn1";
             this.uSERIDDataGridViewTextBoxColumn1.Width = 125;
             // 
-            // materialFlatButton4
-            // 
-            this.materialFlatButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton4.Depth = 0;
-            this.materialFlatButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
-            this.materialFlatButton4.FlatAppearance.BorderSize = 300;
-            this.materialFlatButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialFlatButton4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialFlatButton4.Location = new System.Drawing.Point(308, 474);
-            this.materialFlatButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton4.Name = "materialFlatButton4";
-            this.materialFlatButton4.Primary = true;
-            this.materialFlatButton4.Size = new System.Drawing.Size(218, 51);
-            this.materialFlatButton4.TabIndex = 5;
-            this.materialFlatButton4.Text = "Save changes";
-            this.materialFlatButton4.UseVisualStyleBackColor = true;
-            this.materialFlatButton4.Click += new System.EventHandler(this.materialFlatButton4_Click);
-            // 
             // dataGridView5
             // 
             this.dataGridView5.AutoGenerateColumns = false;
@@ -557,11 +481,11 @@ namespace ADMIN_GORILLA_BURGER
             this.dELIVERYPERSONAREADataGridViewTextBoxColumn,
             this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn});
             this.dataGridView5.DataSource = this.dELIVERYPERSONBindingSource1;
-            this.dataGridView5.Location = new System.Drawing.Point(24, 54);
+            this.dataGridView5.Location = new System.Drawing.Point(19, 57);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(809, 407);
+            this.dataGridView5.Size = new System.Drawing.Size(807, 407);
             this.dataGridView5.TabIndex = 5;
             // 
             // dELIVERYPERSONBindingSource
@@ -627,28 +551,74 @@ namespace ADMIN_GORILLA_BURGER
             this.dELIVERYPERSONBindingSource1.DataMember = "DELIVERY_PERSON";
             this.dELIVERYPERSONBindingSource1.DataSource = this.dba8ec30yanina001DataSetBindingSource;
             // 
-            // materialFlatButton5
+            // materialRaisedButton1
             // 
-            this.materialFlatButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton5.Depth = 0;
-            this.materialFlatButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
-            this.materialFlatButton5.FlatAppearance.BorderSize = 300;
-            this.materialFlatButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialFlatButton5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialFlatButton5.Location = new System.Drawing.Point(322, 484);
-            this.materialFlatButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton5.Name = "materialFlatButton5";
-            this.materialFlatButton5.Primary = true;
-            this.materialFlatButton5.Size = new System.Drawing.Size(139, 36);
-            this.materialFlatButton5.TabIndex = 6;
-            this.materialFlatButton5.Text = "Save changes";
-            this.materialFlatButton5.UseVisualStyleBackColor = true;
-            this.materialFlatButton5.Click += new System.EventHandler(this.materialFlatButton5_Click);
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(265, 464);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(304, 41);
+            this.materialRaisedButton1.TabIndex = 5;
+            this.materialRaisedButton1.Text = "SAVE CHANGES";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
+            // materialRaisedButton2
+            // 
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(278, 480);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(262, 43);
+            this.materialRaisedButton2.TabIndex = 6;
+            this.materialRaisedButton2.Text = "SAVE CHANGES";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
+            // 
+            // materialRaisedButton3
+            // 
+            this.materialRaisedButton3.Depth = 0;
+            this.materialRaisedButton3.Location = new System.Drawing.Point(271, 465);
+            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton3.Name = "materialRaisedButton3";
+            this.materialRaisedButton3.Primary = true;
+            this.materialRaisedButton3.Size = new System.Drawing.Size(304, 41);
+            this.materialRaisedButton3.TabIndex = 6;
+            this.materialRaisedButton3.Text = "SAVE CHANGES";
+            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
+            // 
+            // materialRaisedButton4
+            // 
+            this.materialRaisedButton4.Depth = 0;
+            this.materialRaisedButton4.Location = new System.Drawing.Point(260, 482);
+            this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton4.Name = "materialRaisedButton4";
+            this.materialRaisedButton4.Primary = true;
+            this.materialRaisedButton4.Size = new System.Drawing.Size(304, 41);
+            this.materialRaisedButton4.TabIndex = 6;
+            this.materialRaisedButton4.Text = "SAVE CHANGES";
+            this.materialRaisedButton4.UseVisualStyleBackColor = true;
+            this.materialRaisedButton4.Click += new System.EventHandler(this.materialRaisedButton4_Click);
+            // 
+            // materialRaisedButton5
+            // 
+            this.materialRaisedButton5.Depth = 0;
+            this.materialRaisedButton5.Location = new System.Drawing.Point(263, 459);
+            this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton5.Name = "materialRaisedButton5";
+            this.materialRaisedButton5.Primary = true;
+            this.materialRaisedButton5.Size = new System.Drawing.Size(304, 41);
+            this.materialRaisedButton5.TabIndex = 6;
+            this.materialRaisedButton5.Text = "SAVE CHANGES";
+            this.materialRaisedButton5.UseVisualStyleBackColor = true;
+            this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(837, 574);
+            this.ClientSize = new System.Drawing.Size(852, 574);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -694,18 +664,15 @@ namespace ADMIN_GORILLA_BURGER
         private DataGridViewTextBoxColumn uSERLOGINDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn uSERPASSWORDDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn rOLEIDDataGridViewTextBoxColumn;
-        private MaterialFlatButton materialFlatButton1;
         private DataGridView dataGridView3;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private MaterialFlatButton materialFlatButton2;
         private DataGridView dataGridView1;
         private BindingSource pRODUCTBindingSource;
         private db_a8ec30_yanina001DataSetTableAdapters.PRODUCTTableAdapter pRODUCTTableAdapter;
-        private MaterialFlatButton materialFlatButton3;
         private DataGridViewTextBoxColumn pRODUCTIDDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn pRODUCTNAMEDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn pRODUCTSUBSCRIBEDataGridViewTextBoxColumn;
@@ -717,7 +684,6 @@ namespace ADMIN_GORILLA_BURGER
         private TabPage tabPage1;
         private BindingSource lISTPRODUCTSBindingSource;
         private db_a8ec30_yanina001DataSetTableAdapters.LIST_PRODUCTSTableAdapter lIST_PRODUCTSTableAdapter;
-        private MaterialFlatButton materialFlatButton4;
         private DataGridViewTextBoxColumn lISTPRODUCTSIDDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn pRODUCTIDDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn cOUNTDataGridViewTextBoxColumn;
@@ -725,7 +691,6 @@ namespace ADMIN_GORILLA_BURGER
         private DataGridView dataGridView5;
         private BindingSource dELIVERYPERSONBindingSource;
         private db_a8ec30_yanina001DataSetTableAdapters.DELIVERY_PERSONTableAdapter dELIVERY_PERSONTableAdapter;
-        private MaterialFlatButton materialFlatButton5;
         private DataGridViewTextBoxColumn dELIVERYPERSONIDDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dELIVERYUSERIDDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dELIVERYPERSONNAMEDataGridViewTextBoxColumn;
@@ -733,6 +698,11 @@ namespace ADMIN_GORILLA_BURGER
         private DataGridViewTextBoxColumn dELIVERYPERSONAREADataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn;
         private BindingSource dELIVERYPERSONBindingSource1;
+        private MaterialRaisedButton materialRaisedButton1;
+        private MaterialRaisedButton materialRaisedButton2;
+        private MaterialRaisedButton materialRaisedButton3;
+        private MaterialRaisedButton materialRaisedButton4;
+        private MaterialRaisedButton materialRaisedButton5;
     }
 }
 
