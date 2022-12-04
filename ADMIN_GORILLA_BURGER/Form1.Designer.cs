@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace ADMIN_GORILLA_BURGER
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -32,7 +32,7 @@ namespace ADMIN_GORILLA_BURGER
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -156,6 +156,12 @@ namespace ADMIN_GORILLA_BURGER
             this.imageList1.Images.SetKeyName(1, "home.jpg");
             this.imageList1.Images.SetKeyName(2, "new-product-icon-9.jpg");
             this.imageList1.Images.SetKeyName(3, "user-add-icon.png");
+            this.imageList1.Images.SetKeyName(4, "409-4090793_user-with-smartphone-vector-mobile-phone-user-icon.png");
+            this.imageList1.Images.SetKeyName(5, "804ea7f75b09ad6d720bce35485026bd.png");
+            this.imageList1.Images.SetKeyName(6, "1876686-200.png");
+            this.imageList1.Images.SetKeyName(7, "4185164.png");
+            this.imageList1.Images.SetKeyName(8, "images.png");
+            this.imageList1.Images.SetKeyName(9, "list.png");
             // 
             // tabPage4
             // 
@@ -390,6 +396,7 @@ namespace ADMIN_GORILLA_BURGER
             // 
             this.tabPage1.Controls.Add(this.materialRaisedButton2);
             this.tabPage1.Controls.Add(this.dataGridView5);
+            this.tabPage1.ImageKey = "images.png";
             this.tabPage1.Location = new System.Drawing.Point(4, 39);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(844, 531);
@@ -401,6 +408,7 @@ namespace ADMIN_GORILLA_BURGER
             // 
             this.tabPage5.Controls.Add(this.materialRaisedButton1);
             this.tabPage5.Controls.Add(this.dataGridView4);
+            this.tabPage5.ImageKey = "4185164.png";
             this.tabPage5.Location = new System.Drawing.Point(4, 39);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(844, 531);
@@ -616,11 +624,11 @@ namespace ADMIN_GORILLA_BURGER
             this.materialRaisedButton5.UseVisualStyleBackColor = true;
             this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
             // 
-            // Form1
+            // MainForm
             // 
             this.ClientSize = new System.Drawing.Size(852, 574);
             this.Controls.Add(this.tabControl1);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
