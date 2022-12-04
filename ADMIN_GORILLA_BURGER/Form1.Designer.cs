@@ -88,6 +88,9 @@ namespace ADMIN_GORILLA_BURGER
             this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -107,6 +110,8 @@ namespace ADMIN_GORILLA_BURGER
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dELIVERYPERSONBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dELIVERYPERSONBindingSource1)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -116,6 +121,7 @@ namespace ADMIN_GORILLA_BURGER
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.ImageList = this.imageList1;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -161,7 +167,8 @@ namespace ADMIN_GORILLA_BURGER
             this.imageList1.Images.SetKeyName(6, "1876686-200.png");
             this.imageList1.Images.SetKeyName(7, "4185164.png");
             this.imageList1.Images.SetKeyName(8, "images.png");
-            this.imageList1.Images.SetKeyName(9, "list.png");
+            this.imageList1.Images.SetKeyName(9, "307-3074469_history-icon-png-transparent-png.png");
+            this.imageList1.Images.SetKeyName(10, "589-5899778_history-icon-png-history-icon-transparent-png.png");
             // 
             // tabPage4
             // 
@@ -624,6 +631,48 @@ namespace ADMIN_GORILLA_BURGER
             this.materialRaisedButton5.UseVisualStyleBackColor = true;
             this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
             // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tabPage6.Controls.Add(this.dataGridView6);
+            this.tabPage6.Controls.Add(this.materialSingleLineTextField1);
+            this.tabPage6.ImageKey = "307-3074469_history-icon-png-transparent-png.png";
+            this.tabPage6.Location = new System.Drawing.Point(4, 39);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(844, 531);
+            this.tabPage6.TabIndex = 6;
+            this.tabPage6.Text = "HISTORY";
+            // 
+            // materialSingleLineTextField1
+            // 
+            this.materialSingleLineTextField1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.materialSingleLineTextField1.Depth = 0;
+            this.materialSingleLineTextField1.Hint = "";
+            this.materialSingleLineTextField1.Location = new System.Drawing.Point(275, 39);
+            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
+            this.materialSingleLineTextField1.PasswordChar = '\0';
+            this.materialSingleLineTextField1.SelectedText = "";
+            this.materialSingleLineTextField1.SelectionLength = 0;
+            this.materialSingleLineTextField1.SelectionStart = 0;
+            this.materialSingleLineTextField1.Size = new System.Drawing.Size(293, 28);
+            this.materialSingleLineTextField1.TabIndex = 0;
+            this.materialSingleLineTextField1.Text = "Enter User ID";
+            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.materialSingleLineTextField1.Click += new System.EventHandler(this.materialSingleLineTextField1_Click);
+            this.materialSingleLineTextField1.TextChanged += new System.EventHandler(this.materialSingleLineTextField1_TextChanged);
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(146, 106);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.RowHeadersWidth = 51;
+            this.dataGridView6.RowTemplate.Height = 24;
+            this.dataGridView6.Size = new System.Drawing.Size(557, 339);
+            this.dataGridView6.TabIndex = 1;
+            // 
             // MainForm
             // 
             this.ClientSize = new System.Drawing.Size(852, 574);
@@ -651,6 +700,8 @@ namespace ADMIN_GORILLA_BURGER
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dELIVERYPERSONBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dELIVERYPERSONBindingSource1)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -711,6 +762,9 @@ namespace ADMIN_GORILLA_BURGER
         private MaterialRaisedButton materialRaisedButton3;
         private MaterialRaisedButton materialRaisedButton4;
         private MaterialRaisedButton materialRaisedButton5;
+        private TabPage tabPage6;
+        private MaterialSingleLineTextField materialSingleLineTextField1;
+        private DataGridView dataGridView6;
     }
 }
 
