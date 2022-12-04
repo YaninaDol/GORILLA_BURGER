@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Deliveroo
 {
-    public class Controller
+    public class ControllerDB
     {
         public GorillaBurgerModel gorillaBurgerList;
 
-        public Controller()
+        public ControllerDB()
         {
             gorillaBurgerList = new GorillaBurgerModel();
         }

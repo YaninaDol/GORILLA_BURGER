@@ -14,14 +14,14 @@ namespace Deliveroo
 {
     public partial class Basket : Form
     {
-        private Controller controller;
+        private ControllerDB controller;
         private List<LIST_PRODUCTS> selectProducts;
         List<PRODUCT> copy;
         private USER user;
         public Basket(USER user, List<PRODUCT> copy)
         {
             InitializeComponent();
-            controller = new Controller();
+            controller = new ControllerDB();
             this.user= user;
             this.copy = copy;
             selectProducts = this.getList(this.copy);

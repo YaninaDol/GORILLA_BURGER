@@ -14,13 +14,16 @@ namespace Deliveroo
     public partial class MenuForm : Form
     {
         int count = 0;
-        private Controller controller;
+        // private ControllerDB controller;
+        CategoryController categoryController;
+        ProductController productController;
         public List<PRODUCT> copy; 
         public MenuForm()
         {
             
             InitializeComponent();
-            controller = new Controller();  
+            categoryController = new CategoryController();
+            productController=new ProductController();
             copy = new List<PRODUCT>();
            
         }
@@ -31,7 +34,7 @@ namespace Deliveroo
 
            
             int x = 191;
-            foreach (var item in controller.gorillaBurgerList.CATEGORies)
+            foreach (var item in categoryController.categories)
             {
                Button button1 = new Button();
                 button1.Text = item.CATEGORY_NAME.ToString();
@@ -45,15 +48,17 @@ namespace Deliveroo
                x += button1.Size.Height + 15;
             }
 
+
+
         
         }
 
         private void Btn_Click(object sender, EventArgs e)
         {
-            int INDX = controller.gorillaBurgerList.CATEGORies.ToList().Where(x => x.CATEGORY_NAME == (sender as Button).Text).FirstOrDefault().CATEGORYID;
+            int INDX = categoryController.categories.Where(x => x.CATEGORY_NAME == (sender as Button).Text).FirstOrDefault().CATEGORYID;
             int h = 0;
           
-                var list = controller.gorillaBurgerList.PRODUCTs.Where(x => x.CATEGORYID == INDX);
+                var list = productController.products.Where(x => x.CATEGORYID == INDX);
                 this.panel2.Controls.Clear();
 
 

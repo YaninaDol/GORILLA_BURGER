@@ -251,10 +251,11 @@
     <Compile Include="BasketUserControl.Designer.cs">
       <DependentUpon>BasketUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="CATEGORY.cs" />
-    <Compile Include="CLIENT_ORDER.cs" />
-    <Compile Include="Controller.cs" />
-    <Compile Include="DELIVERY_PERSON.cs" />
+    <Compile Include="Model\CATEGORY.cs" />
+    <Compile Include="Controller\CategoryController.cs" />
+    <Compile Include="Model\CLIENT_ORDER.cs" />
+    <Compile Include="Controller\ControllerDB.cs" />
+    <Compile Include="Model\DELIVERY_PERSON.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,7 +263,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GorillaBurgerModel.cs" />
-    <Compile Include="LIST_PRODUCTS.cs" />
+    <Compile Include="Model\LIST_PRODUCTS.cs" />
     <Compile Include="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,7 +276,8 @@
     <Compile Include="MenuItems.Designer.cs">
       <DependentUpon>MenuItems.cs</DependentUpon>
     </Compile>
-    <Compile Include="PRODUCT.cs" />
+    <Compile Include="Model\PRODUCT.cs" />
+    <Compile Include="Controller\ProductController.cs" />
     <Compile Include="ProductUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -284,8 +286,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ROLE.cs" />
-    <Compile Include="USER.cs" />
+    <Compile Include="Model\ROLE.cs" />
+    <Compile Include="Model\USER.cs" />
     <EmbeddedResource Include="Basket.resx">
       <DependentUpon>Basket.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,6 +347,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

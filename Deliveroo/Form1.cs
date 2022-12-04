@@ -16,13 +16,13 @@ namespace Deliveroo
     {
        public string login;
        public string password;
-       private Controller controller;
+       private ControllerDB controller;
        public USER user;
         
         public Form1()
         {
             InitializeComponent();
-            controller = new Controller(); 
+            controller = new ControllerDB(); 
            
         }
 
