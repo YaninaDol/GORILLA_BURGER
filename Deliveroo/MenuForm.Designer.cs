@@ -75,9 +75,9 @@ namespace Deliveroo
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(260, 0);
+            this.panel1.Location = new System.Drawing.Point(227, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 694);
+            this.panel1.Size = new System.Drawing.Size(376, 694);
             this.panel1.TabIndex = 5;
             this.panel1.Click += new System.EventHandler(this.Panel1_Click);
             // 

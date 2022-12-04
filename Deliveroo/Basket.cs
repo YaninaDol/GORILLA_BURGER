@@ -34,7 +34,7 @@ namespace Deliveroo
             string area = this.textBox2.Text;
             string adress = this.textBox3.Text;
             string phone = this.textBox4.Text;
-            int deliveryPersonId;
+           
             DELIVERY_PERSON dELIVERY_PERSON = new DELIVERY_PERSON() {DELIVERY_USERID=this.user.USERID, DELIVERY_PERSON_NAME = this.textBox1.Text, DELIVERY_PERSON_AREA = this.textBox2.Text, DELIVERY_PERSON_FULL_ADDRESS = this.textBox3.Text, DELIVERY_PERSON_CONTACTNUMBER = this.textBox4.Text };
              if(controller.gorillaBurgerList.DELIVERY_PERSONS.ToList().Contains(dELIVERY_PERSON))
             {
