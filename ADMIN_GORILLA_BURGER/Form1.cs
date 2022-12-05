@@ -6,6 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,8 +17,10 @@ namespace ADMIN_GORILLA_BURGER
 {
     public partial class MainForm : MaterialForm
     {
-        List<CLIENT_ORDER> clients;
-        ClientOrderController clientOrderController;
+        DataTable selectUsers;
+      
+        private List<CLIENT_ORDER> clients;
+        private ClientOrderController clientOrderController;
         public MainForm()
         {
             var materialSkinManager = MaterialSkinManager.Instance;
@@ -28,7 +31,8 @@ namespace ADMIN_GORILLA_BURGER
             InitializeComponent();
             clientOrderController= new ClientOrderController();   
             clients=new List<CLIENT_ORDER>();
-        
+          
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -45,6 +49,13 @@ namespace ADMIN_GORILLA_BURGER
             this.cLIENT_ORDERTableAdapter.Fill(this.db_a8ec30_yanina001DataSet.CLIENT_ORDER);
 
             dataGridView6.DataSource = this.db_a8ec30_yanina001DataSet.CLIENT_ORDER;
+            //selectUsers= this.db_a8ec30_yanina001DataSet.USER.Select("ROLEID='1'").CopyToDataTable();
+            //dataGridView2.DataSource = selectUsers;
+            //dataGridView2.Columns["USER_PASSWORD"].Visible= false;
+
+            this.db_a8ec30_yanina001DataSet.USER.DefaultView.RowFilter = "ROLEID='1'";
+            dataGridView2.DataSource = this.db_a8ec30_yanina001DataSet.USER.DefaultView;
+            dataGridView2.Columns["USER_PASSWORD"].Visible = false;
 
 
         }
@@ -63,6 +74,7 @@ namespace ADMIN_GORILLA_BURGER
         private void materialRaisedButton3_Click(object sender, EventArgs e)
         {
             this.uSERTableAdapter.Update(this.db_a8ec30_yanina001DataSet.USER);
+          
         }
 
         private void materialRaisedButton4_Click(object sender, EventArgs e)

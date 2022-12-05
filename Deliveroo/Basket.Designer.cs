@@ -94,6 +94,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Font = new System.Drawing.Font("Trebuchet MS", 12F);
             this.textBox4.Location = new System.Drawing.Point(210, 550);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -102,6 +103,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Font = new System.Drawing.Font("Trebuchet MS", 12F);
             this.textBox3.Location = new System.Drawing.Point(210, 442);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -110,6 +112,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Font = new System.Drawing.Font("Trebuchet MS", 12F);
             this.textBox2.Location = new System.Drawing.Point(215, 344);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -118,6 +121,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(215, 239);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -175,9 +179,9 @@
             // Total
             // 
             this.Total.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Total.Location = new System.Drawing.Point(413, 592);
+            this.Total.Location = new System.Drawing.Point(356, 592);
             this.Total.Name = "Total";
-            this.Total.Size = new System.Drawing.Size(235, 53);
+            this.Total.Size = new System.Drawing.Size(292, 53);
             this.Total.TabIndex = 2;
             // 
             // Basket

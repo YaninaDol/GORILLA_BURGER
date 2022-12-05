@@ -35,47 +35,31 @@ namespace ADMIN_GORILLA_BURGER
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.db_a8ec30_yanina001DataSet = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSet();
-            this.dba8ec30yanina001DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cLIENTORDERBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cLIENT_ORDERTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.CLIENT_ORDERTableAdapter();
+            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.uSERBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.uSERTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.USERTableAdapter();
-            this.uSERIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uSERLOGINDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uSERPASSWORDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rOLEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pRODUCTBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pRODUCTTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.PRODUCTTableAdapter();
             this.pRODUCTIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRODUCTNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uRLPICTUREDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cATEGORYIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRICEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pRODUCTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dba8ec30yanina001DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.db_a8ec30_yanina001DataSet = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSet();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.lISTPRODUCTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lIST_PRODUCTSTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.LIST_PRODUCTSTableAdapter();
             this.lISTPRODUCTSIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRODUCTIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cOUNTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uSERIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lISTPRODUCTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.dELIVERYPERSONBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dELIVERY_PERSONTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.DELIVERY_PERSONTableAdapter();
             this.dELIVERYPERSONIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dELIVERYUSERIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,35 +67,47 @@ namespace ADMIN_GORILLA_BURGER
             this.dELIVERYPERSONAREADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dELIVERYPERSONBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cLIENTORDERBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.uSERBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cLIENT_ORDERTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.CLIENT_ORDERTableAdapter();
+            this.uSERTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.USERTableAdapter();
+            this.pRODUCTTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.PRODUCTTableAdapter();
+            this.lIST_PRODUCTSTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.LIST_PRODUCTSTableAdapter();
+            this.dELIVERYPERSONBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dELIVERY_PERSONTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.DELIVERY_PERSONTableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.db_a8ec30_yanina001DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dba8ec30yanina001DataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLIENTORDERBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSERBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRODUCTBindingSource)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dba8ec30yanina001DataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_a8ec30_yanina001DataSet)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lISTPRODUCTSBindingSource)).BeginInit();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dELIVERYPERSONBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dELIVERYPERSONBindingSource1)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTORDERBindingSource)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSERBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dELIVERYPERSONBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -142,6 +138,30 @@ namespace ADMIN_GORILLA_BURGER
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "USER";
             // 
+            // materialRaisedButton3
+            // 
+            this.materialRaisedButton3.Depth = 0;
+            this.materialRaisedButton3.Location = new System.Drawing.Point(329, 472);
+            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton3.Name = "materialRaisedButton3";
+            this.materialRaisedButton3.Primary = true;
+            this.materialRaisedButton3.Size = new System.Drawing.Size(186, 41);
+            this.materialRaisedButton3.TabIndex = 6;
+            this.materialRaisedButton3.Text = "SAVE CHANGES";
+            this.materialRaisedButton3.UseVisualStyleBackColor = true;
+            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(149, 37);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(554, 407);
+            this.dataGridView2.TabIndex = 1;
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -154,21 +174,282 @@ namespace ADMIN_GORILLA_BURGER
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "PRODUCT";
             // 
-            // imageList1
+            // materialRaisedButton4
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "aafdea1e25408dc9e20307a7762f8c2f.jpg");
-            this.imageList1.Images.SetKeyName(1, "home.jpg");
-            this.imageList1.Images.SetKeyName(2, "new-product-icon-9.jpg");
-            this.imageList1.Images.SetKeyName(3, "user-add-icon.png");
-            this.imageList1.Images.SetKeyName(4, "409-4090793_user-with-smartphone-vector-mobile-phone-user-icon.png");
-            this.imageList1.Images.SetKeyName(5, "804ea7f75b09ad6d720bce35485026bd.png");
-            this.imageList1.Images.SetKeyName(6, "1876686-200.png");
-            this.imageList1.Images.SetKeyName(7, "4185164.png");
-            this.imageList1.Images.SetKeyName(8, "images.png");
-            this.imageList1.Images.SetKeyName(9, "307-3074469_history-icon-png-transparent-png.png");
-            this.imageList1.Images.SetKeyName(10, "589-5899778_history-icon-png-history-icon-transparent-png.png");
+            this.materialRaisedButton4.Depth = 0;
+            this.materialRaisedButton4.Location = new System.Drawing.Point(260, 482);
+            this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton4.Name = "materialRaisedButton4";
+            this.materialRaisedButton4.Primary = true;
+            this.materialRaisedButton4.Size = new System.Drawing.Size(304, 41);
+            this.materialRaisedButton4.TabIndex = 6;
+            this.materialRaisedButton4.Text = "SAVE CHANGES";
+            this.materialRaisedButton4.UseVisualStyleBackColor = true;
+            this.materialRaisedButton4.Click += new System.EventHandler(this.materialRaisedButton4_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.pRODUCTIDDataGridViewTextBoxColumn,
+            this.pRODUCTNAMEDataGridViewTextBoxColumn,
+            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn,
+            this.uRLPICTUREDataGridViewTextBoxColumn,
+            this.cATEGORYIDDataGridViewTextBoxColumn,
+            this.pRICEDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.pRODUCTBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(8, 52);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(809, 407);
+            this.dataGridView1.TabIndex = 2;
+            // 
+            // pRODUCTIDDataGridViewTextBoxColumn
+            // 
+            this.pRODUCTIDDataGridViewTextBoxColumn.DataPropertyName = "PRODUCTID";
+            this.pRODUCTIDDataGridViewTextBoxColumn.HeaderText = "PRODUCTID";
+            this.pRODUCTIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.pRODUCTIDDataGridViewTextBoxColumn.Name = "pRODUCTIDDataGridViewTextBoxColumn";
+            this.pRODUCTIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.pRODUCTIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // pRODUCTNAMEDataGridViewTextBoxColumn
+            // 
+            this.pRODUCTNAMEDataGridViewTextBoxColumn.DataPropertyName = "PRODUCT_NAME";
+            this.pRODUCTNAMEDataGridViewTextBoxColumn.HeaderText = "PRODUCT_NAME";
+            this.pRODUCTNAMEDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.pRODUCTNAMEDataGridViewTextBoxColumn.Name = "pRODUCTNAMEDataGridViewTextBoxColumn";
+            this.pRODUCTNAMEDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // pRODUCTSUBSCRIBEDataGridViewTextBoxColumn
+            // 
+            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn.DataPropertyName = "PRODUCT_SUBSCRIBE";
+            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn.HeaderText = "PRODUCT_SUBSCRIBE";
+            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn.Name = "pRODUCTSUBSCRIBEDataGridViewTextBoxColumn";
+            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // uRLPICTUREDataGridViewTextBoxColumn
+            // 
+            this.uRLPICTUREDataGridViewTextBoxColumn.DataPropertyName = "URL_PICTURE";
+            this.uRLPICTUREDataGridViewTextBoxColumn.HeaderText = "URL_PICTURE";
+            this.uRLPICTUREDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.uRLPICTUREDataGridViewTextBoxColumn.Name = "uRLPICTUREDataGridViewTextBoxColumn";
+            this.uRLPICTUREDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // cATEGORYIDDataGridViewTextBoxColumn
+            // 
+            this.cATEGORYIDDataGridViewTextBoxColumn.DataPropertyName = "CATEGORYID";
+            this.cATEGORYIDDataGridViewTextBoxColumn.HeaderText = "CATEGORYID";
+            this.cATEGORYIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cATEGORYIDDataGridViewTextBoxColumn.Name = "cATEGORYIDDataGridViewTextBoxColumn";
+            this.cATEGORYIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // pRICEDataGridViewTextBoxColumn
+            // 
+            this.pRICEDataGridViewTextBoxColumn.DataPropertyName = "PRICE";
+            this.pRICEDataGridViewTextBoxColumn.HeaderText = "PRICE";
+            this.pRICEDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.pRICEDataGridViewTextBoxColumn.Name = "pRICEDataGridViewTextBoxColumn";
+            this.pRICEDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // pRODUCTBindingSource
+            // 
+            this.pRODUCTBindingSource.DataMember = "PRODUCT";
+            this.pRODUCTBindingSource.DataSource = this.dba8ec30yanina001DataSetBindingSource;
+            // 
+            // dba8ec30yanina001DataSetBindingSource
+            // 
+            this.dba8ec30yanina001DataSetBindingSource.DataSource = this.db_a8ec30_yanina001DataSet;
+            this.dba8ec30yanina001DataSetBindingSource.Position = 0;
+            // 
+            // db_a8ec30_yanina001DataSet
+            // 
+            this.db_a8ec30_yanina001DataSet.DataSetName = "db_a8ec30_yanina001DataSet";
+            this.db_a8ec30_yanina001DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.materialRaisedButton1);
+            this.tabPage5.Controls.Add(this.dataGridView4);
+            this.tabPage5.ImageKey = "4185164.png";
+            this.tabPage5.Location = new System.Drawing.Point(4, 39);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(844, 531);
+            this.tabPage5.TabIndex = 5;
+            this.tabPage5.Text = "LIST PRODUCTS";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(265, 464);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(304, 41);
+            this.materialRaisedButton1.TabIndex = 5;
+            this.materialRaisedButton1.Text = "SAVE CHANGES";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AutoGenerateColumns = false;
+            this.dataGridView4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lISTPRODUCTSIDDataGridViewTextBoxColumn,
+            this.pRODUCTIDDataGridViewTextBoxColumn1,
+            this.cOUNTDataGridViewTextBoxColumn,
+            this.uSERIDDataGridViewTextBoxColumn1});
+            this.dataGridView4.DataSource = this.lISTPRODUCTSBindingSource;
+            this.dataGridView4.Location = new System.Drawing.Point(137, 39);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowHeadersWidth = 51;
+            this.dataGridView4.RowTemplate.Height = 24;
+            this.dataGridView4.Size = new System.Drawing.Size(554, 407);
+            this.dataGridView4.TabIndex = 4;
+            // 
+            // lISTPRODUCTSIDDataGridViewTextBoxColumn
+            // 
+            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.DataPropertyName = "LIST_PRODUCTSID";
+            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.HeaderText = "LIST_PRODUCTSID";
+            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.Name = "lISTPRODUCTSIDDataGridViewTextBoxColumn";
+            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // pRODUCTIDDataGridViewTextBoxColumn1
+            // 
+            this.pRODUCTIDDataGridViewTextBoxColumn1.DataPropertyName = "PRODUCTID";
+            this.pRODUCTIDDataGridViewTextBoxColumn1.HeaderText = "PRODUCTID";
+            this.pRODUCTIDDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.pRODUCTIDDataGridViewTextBoxColumn1.Name = "pRODUCTIDDataGridViewTextBoxColumn1";
+            this.pRODUCTIDDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // cOUNTDataGridViewTextBoxColumn
+            // 
+            this.cOUNTDataGridViewTextBoxColumn.DataPropertyName = "COUNT";
+            this.cOUNTDataGridViewTextBoxColumn.HeaderText = "COUNT";
+            this.cOUNTDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cOUNTDataGridViewTextBoxColumn.Name = "cOUNTDataGridViewTextBoxColumn";
+            this.cOUNTDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // uSERIDDataGridViewTextBoxColumn1
+            // 
+            this.uSERIDDataGridViewTextBoxColumn1.DataPropertyName = "USER_ID";
+            this.uSERIDDataGridViewTextBoxColumn1.HeaderText = "USER_ID";
+            this.uSERIDDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.uSERIDDataGridViewTextBoxColumn1.Name = "uSERIDDataGridViewTextBoxColumn1";
+            this.uSERIDDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // lISTPRODUCTSBindingSource
+            // 
+            this.lISTPRODUCTSBindingSource.DataMember = "LIST_PRODUCTS";
+            this.lISTPRODUCTSBindingSource.DataSource = this.dba8ec30yanina001DataSetBindingSource;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.materialRaisedButton2);
+            this.tabPage1.Controls.Add(this.dataGridView5);
+            this.tabPage1.ImageKey = "images.png";
+            this.tabPage1.Location = new System.Drawing.Point(4, 39);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(844, 531);
+            this.tabPage1.TabIndex = 4;
+            this.tabPage1.Text = "DELIVERY PERSON";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // materialRaisedButton2
+            // 
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(278, 480);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(262, 43);
+            this.materialRaisedButton2.TabIndex = 6;
+            this.materialRaisedButton2.Text = "SAVE CHANGES";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.AutoGenerateColumns = false;
+            this.dataGridView5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dELIVERYPERSONIDDataGridViewTextBoxColumn,
+            this.dELIVERYUSERIDDataGridViewTextBoxColumn,
+            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn,
+            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn,
+            this.dELIVERYPERSONAREADataGridViewTextBoxColumn,
+            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn});
+            this.dataGridView5.DataSource = this.dELIVERYPERSONBindingSource1;
+            this.dataGridView5.Location = new System.Drawing.Point(19, 57);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.RowHeadersWidth = 51;
+            this.dataGridView5.RowTemplate.Height = 24;
+            this.dataGridView5.Size = new System.Drawing.Size(807, 407);
+            this.dataGridView5.TabIndex = 5;
+            // 
+            // dELIVERYPERSONIDDataGridViewTextBoxColumn
+            // 
+            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_PERSONID";
+            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.HeaderText = "DELIVERY_PERSONID";
+            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.Name = "dELIVERYPERSONIDDataGridViewTextBoxColumn";
+            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dELIVERYUSERIDDataGridViewTextBoxColumn
+            // 
+            this.dELIVERYUSERIDDataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_USERID";
+            this.dELIVERYUSERIDDataGridViewTextBoxColumn.HeaderText = "DELIVERY_USERID";
+            this.dELIVERYUSERIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dELIVERYUSERIDDataGridViewTextBoxColumn.Name = "dELIVERYUSERIDDataGridViewTextBoxColumn";
+            this.dELIVERYUSERIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dELIVERYPERSONNAMEDataGridViewTextBoxColumn
+            // 
+            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_PERSON_NAME";
+            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn.HeaderText = "DELIVERY_PERSON_NAME";
+            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn.Name = "dELIVERYPERSONNAMEDataGridViewTextBoxColumn";
+            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn
+            // 
+            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_PERSON_FULL_ADDRESS";
+            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn.HeaderText = "DELIVERY_PERSON_FULL_ADDRESS";
+            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn.Name = "dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn";
+            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dELIVERYPERSONAREADataGridViewTextBoxColumn
+            // 
+            this.dELIVERYPERSONAREADataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_PERSON_AREA";
+            this.dELIVERYPERSONAREADataGridViewTextBoxColumn.HeaderText = "DELIVERY_PERSON_AREA";
+            this.dELIVERYPERSONAREADataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dELIVERYPERSONAREADataGridViewTextBoxColumn.Name = "dELIVERYPERSONAREADataGridViewTextBoxColumn";
+            this.dELIVERYPERSONAREADataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn
+            // 
+            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_PERSON_CONTACTNUMBER";
+            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn.HeaderText = "DELIVERY_PERSON_CONTACTNUMBER";
+            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn.Name = "dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn";
+            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dELIVERYPERSONBindingSource1
+            // 
+            this.dELIVERYPERSONBindingSource1.DataMember = "DELIVERY_PERSON";
+            this.dELIVERYPERSONBindingSource1.DataSource = this.dba8ec30yanina001DataSetBindingSource;
             // 
             // tabPage4
             // 
@@ -182,84 +463,18 @@ namespace ADMIN_GORILLA_BURGER
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "ORDER";
             // 
-            // db_a8ec30_yanina001DataSet
+            // materialRaisedButton5
             // 
-            this.db_a8ec30_yanina001DataSet.DataSetName = "db_a8ec30_yanina001DataSet";
-            this.db_a8ec30_yanina001DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dba8ec30yanina001DataSetBindingSource
-            // 
-            this.dba8ec30yanina001DataSetBindingSource.DataSource = this.db_a8ec30_yanina001DataSet;
-            this.dba8ec30yanina001DataSetBindingSource.Position = 0;
-            // 
-            // cLIENTORDERBindingSource
-            // 
-            this.cLIENTORDERBindingSource.DataMember = "CLIENT_ORDER";
-            this.cLIENTORDERBindingSource.DataSource = this.dba8ec30yanina001DataSetBindingSource;
-            // 
-            // cLIENT_ORDERTableAdapter
-            // 
-            this.cLIENT_ORDERTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.uSERIDDataGridViewTextBoxColumn,
-            this.uSERLOGINDataGridViewTextBoxColumn,
-            this.uSERPASSWORDDataGridViewTextBoxColumn,
-            this.rOLEIDDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.uSERBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(149, 37);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(554, 407);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // uSERBindingSource
-            // 
-            this.uSERBindingSource.DataMember = "USER";
-            this.uSERBindingSource.DataSource = this.dba8ec30yanina001DataSetBindingSource;
-            // 
-            // uSERTableAdapter
-            // 
-            this.uSERTableAdapter.ClearBeforeFill = true;
-            // 
-            // uSERIDDataGridViewTextBoxColumn
-            // 
-            this.uSERIDDataGridViewTextBoxColumn.DataPropertyName = "USERID";
-            this.uSERIDDataGridViewTextBoxColumn.HeaderText = "USERID";
-            this.uSERIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.uSERIDDataGridViewTextBoxColumn.Name = "uSERIDDataGridViewTextBoxColumn";
-            this.uSERIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.uSERIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // uSERLOGINDataGridViewTextBoxColumn
-            // 
-            this.uSERLOGINDataGridViewTextBoxColumn.DataPropertyName = "USER_LOGIN";
-            this.uSERLOGINDataGridViewTextBoxColumn.HeaderText = "USER_LOGIN";
-            this.uSERLOGINDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.uSERLOGINDataGridViewTextBoxColumn.Name = "uSERLOGINDataGridViewTextBoxColumn";
-            this.uSERLOGINDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // uSERPASSWORDDataGridViewTextBoxColumn
-            // 
-            this.uSERPASSWORDDataGridViewTextBoxColumn.DataPropertyName = "USER_PASSWORD";
-            this.uSERPASSWORDDataGridViewTextBoxColumn.HeaderText = "USER_PASSWORD";
-            this.uSERPASSWORDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.uSERPASSWORDDataGridViewTextBoxColumn.Name = "uSERPASSWORDDataGridViewTextBoxColumn";
-            this.uSERPASSWORDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // rOLEIDDataGridViewTextBoxColumn
-            // 
-            this.rOLEIDDataGridViewTextBoxColumn.DataPropertyName = "ROLEID";
-            this.rOLEIDDataGridViewTextBoxColumn.HeaderText = "ROLEID";
-            this.rOLEIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.rOLEIDDataGridViewTextBoxColumn.Name = "rOLEIDDataGridViewTextBoxColumn";
-            this.rOLEIDDataGridViewTextBoxColumn.Width = 125;
+            this.materialRaisedButton5.Depth = 0;
+            this.materialRaisedButton5.Location = new System.Drawing.Point(263, 459);
+            this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton5.Name = "materialRaisedButton5";
+            this.materialRaisedButton5.Primary = true;
+            this.materialRaisedButton5.Size = new System.Drawing.Size(304, 41);
+            this.materialRaisedButton5.TabIndex = 6;
+            this.materialRaisedButton5.Text = "SAVE CHANGES";
+            this.materialRaisedButton5.UseVisualStyleBackColor = true;
+            this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
             // 
             // dataGridView3
             // 
@@ -321,315 +536,10 @@ namespace ADMIN_GORILLA_BURGER
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.Width = 125;
             // 
-            // dataGridView1
+            // cLIENTORDERBindingSource
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.pRODUCTIDDataGridViewTextBoxColumn,
-            this.pRODUCTNAMEDataGridViewTextBoxColumn,
-            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn,
-            this.uRLPICTUREDataGridViewTextBoxColumn,
-            this.cATEGORYIDDataGridViewTextBoxColumn,
-            this.pRICEDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.pRODUCTBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 52);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(809, 407);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // pRODUCTBindingSource
-            // 
-            this.pRODUCTBindingSource.DataMember = "PRODUCT";
-            this.pRODUCTBindingSource.DataSource = this.dba8ec30yanina001DataSetBindingSource;
-            // 
-            // pRODUCTTableAdapter
-            // 
-            this.pRODUCTTableAdapter.ClearBeforeFill = true;
-            // 
-            // pRODUCTIDDataGridViewTextBoxColumn
-            // 
-            this.pRODUCTIDDataGridViewTextBoxColumn.DataPropertyName = "PRODUCTID";
-            this.pRODUCTIDDataGridViewTextBoxColumn.HeaderText = "PRODUCTID";
-            this.pRODUCTIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.pRODUCTIDDataGridViewTextBoxColumn.Name = "pRODUCTIDDataGridViewTextBoxColumn";
-            this.pRODUCTIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.pRODUCTIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // pRODUCTNAMEDataGridViewTextBoxColumn
-            // 
-            this.pRODUCTNAMEDataGridViewTextBoxColumn.DataPropertyName = "PRODUCT_NAME";
-            this.pRODUCTNAMEDataGridViewTextBoxColumn.HeaderText = "PRODUCT_NAME";
-            this.pRODUCTNAMEDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.pRODUCTNAMEDataGridViewTextBoxColumn.Name = "pRODUCTNAMEDataGridViewTextBoxColumn";
-            this.pRODUCTNAMEDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // pRODUCTSUBSCRIBEDataGridViewTextBoxColumn
-            // 
-            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn.DataPropertyName = "PRODUCT_SUBSCRIBE";
-            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn.HeaderText = "PRODUCT_SUBSCRIBE";
-            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn.Name = "pRODUCTSUBSCRIBEDataGridViewTextBoxColumn";
-            this.pRODUCTSUBSCRIBEDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // uRLPICTUREDataGridViewTextBoxColumn
-            // 
-            this.uRLPICTUREDataGridViewTextBoxColumn.DataPropertyName = "URL_PICTURE";
-            this.uRLPICTUREDataGridViewTextBoxColumn.HeaderText = "URL_PICTURE";
-            this.uRLPICTUREDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.uRLPICTUREDataGridViewTextBoxColumn.Name = "uRLPICTUREDataGridViewTextBoxColumn";
-            this.uRLPICTUREDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // cATEGORYIDDataGridViewTextBoxColumn
-            // 
-            this.cATEGORYIDDataGridViewTextBoxColumn.DataPropertyName = "CATEGORYID";
-            this.cATEGORYIDDataGridViewTextBoxColumn.HeaderText = "CATEGORYID";
-            this.cATEGORYIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cATEGORYIDDataGridViewTextBoxColumn.Name = "cATEGORYIDDataGridViewTextBoxColumn";
-            this.cATEGORYIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // pRICEDataGridViewTextBoxColumn
-            // 
-            this.pRICEDataGridViewTextBoxColumn.DataPropertyName = "PRICE";
-            this.pRICEDataGridViewTextBoxColumn.HeaderText = "PRICE";
-            this.pRICEDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.pRICEDataGridViewTextBoxColumn.Name = "pRICEDataGridViewTextBoxColumn";
-            this.pRICEDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.materialRaisedButton2);
-            this.tabPage1.Controls.Add(this.dataGridView5);
-            this.tabPage1.ImageKey = "images.png";
-            this.tabPage1.Location = new System.Drawing.Point(4, 39);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(844, 531);
-            this.tabPage1.TabIndex = 4;
-            this.tabPage1.Text = "DELIVERY PERSON";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.materialRaisedButton1);
-            this.tabPage5.Controls.Add(this.dataGridView4);
-            this.tabPage5.ImageKey = "4185164.png";
-            this.tabPage5.Location = new System.Drawing.Point(4, 39);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(844, 531);
-            this.tabPage5.TabIndex = 5;
-            this.tabPage5.Text = "LIST PRODUCTS";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.AutoGenerateColumns = false;
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lISTPRODUCTSIDDataGridViewTextBoxColumn,
-            this.pRODUCTIDDataGridViewTextBoxColumn1,
-            this.cOUNTDataGridViewTextBoxColumn,
-            this.uSERIDDataGridViewTextBoxColumn1});
-            this.dataGridView4.DataSource = this.lISTPRODUCTSBindingSource;
-            this.dataGridView4.Location = new System.Drawing.Point(137, 39);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(554, 407);
-            this.dataGridView4.TabIndex = 4;
-            // 
-            // lISTPRODUCTSBindingSource
-            // 
-            this.lISTPRODUCTSBindingSource.DataMember = "LIST_PRODUCTS";
-            this.lISTPRODUCTSBindingSource.DataSource = this.dba8ec30yanina001DataSetBindingSource;
-            // 
-            // lIST_PRODUCTSTableAdapter
-            // 
-            this.lIST_PRODUCTSTableAdapter.ClearBeforeFill = true;
-            // 
-            // lISTPRODUCTSIDDataGridViewTextBoxColumn
-            // 
-            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.DataPropertyName = "LIST_PRODUCTSID";
-            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.HeaderText = "LIST_PRODUCTSID";
-            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.Name = "lISTPRODUCTSIDDataGridViewTextBoxColumn";
-            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.lISTPRODUCTSIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // pRODUCTIDDataGridViewTextBoxColumn1
-            // 
-            this.pRODUCTIDDataGridViewTextBoxColumn1.DataPropertyName = "PRODUCTID";
-            this.pRODUCTIDDataGridViewTextBoxColumn1.HeaderText = "PRODUCTID";
-            this.pRODUCTIDDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.pRODUCTIDDataGridViewTextBoxColumn1.Name = "pRODUCTIDDataGridViewTextBoxColumn1";
-            this.pRODUCTIDDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // cOUNTDataGridViewTextBoxColumn
-            // 
-            this.cOUNTDataGridViewTextBoxColumn.DataPropertyName = "COUNT";
-            this.cOUNTDataGridViewTextBoxColumn.HeaderText = "COUNT";
-            this.cOUNTDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cOUNTDataGridViewTextBoxColumn.Name = "cOUNTDataGridViewTextBoxColumn";
-            this.cOUNTDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // uSERIDDataGridViewTextBoxColumn1
-            // 
-            this.uSERIDDataGridViewTextBoxColumn1.DataPropertyName = "USER_ID";
-            this.uSERIDDataGridViewTextBoxColumn1.HeaderText = "USER_ID";
-            this.uSERIDDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.uSERIDDataGridViewTextBoxColumn1.Name = "uSERIDDataGridViewTextBoxColumn1";
-            this.uSERIDDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AutoGenerateColumns = false;
-            this.dataGridView5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dELIVERYPERSONIDDataGridViewTextBoxColumn,
-            this.dELIVERYUSERIDDataGridViewTextBoxColumn,
-            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn,
-            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn,
-            this.dELIVERYPERSONAREADataGridViewTextBoxColumn,
-            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn});
-            this.dataGridView5.DataSource = this.dELIVERYPERSONBindingSource1;
-            this.dataGridView5.Location = new System.Drawing.Point(19, 57);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.RowHeadersWidth = 51;
-            this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(807, 407);
-            this.dataGridView5.TabIndex = 5;
-            // 
-            // dELIVERYPERSONBindingSource
-            // 
-            this.dELIVERYPERSONBindingSource.DataMember = "DELIVERY_PERSON";
-            this.dELIVERYPERSONBindingSource.DataSource = this.dba8ec30yanina001DataSetBindingSource;
-            // 
-            // dELIVERY_PERSONTableAdapter
-            // 
-            this.dELIVERY_PERSONTableAdapter.ClearBeforeFill = true;
-            // 
-            // dELIVERYPERSONIDDataGridViewTextBoxColumn
-            // 
-            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_PERSONID";
-            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.HeaderText = "DELIVERY_PERSONID";
-            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.Name = "dELIVERYPERSONIDDataGridViewTextBoxColumn";
-            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.dELIVERYPERSONIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dELIVERYUSERIDDataGridViewTextBoxColumn
-            // 
-            this.dELIVERYUSERIDDataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_USERID";
-            this.dELIVERYUSERIDDataGridViewTextBoxColumn.HeaderText = "DELIVERY_USERID";
-            this.dELIVERYUSERIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dELIVERYUSERIDDataGridViewTextBoxColumn.Name = "dELIVERYUSERIDDataGridViewTextBoxColumn";
-            this.dELIVERYUSERIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dELIVERYPERSONNAMEDataGridViewTextBoxColumn
-            // 
-            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_PERSON_NAME";
-            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn.HeaderText = "DELIVERY_PERSON_NAME";
-            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn.Name = "dELIVERYPERSONNAMEDataGridViewTextBoxColumn";
-            this.dELIVERYPERSONNAMEDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn
-            // 
-            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_PERSON_FULL_ADDRESS";
-            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn.HeaderText = "DELIVERY_PERSON_FULL_ADDRESS";
-            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn.Name = "dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn";
-            this.dELIVERYPERSONFULLADDRESSDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dELIVERYPERSONAREADataGridViewTextBoxColumn
-            // 
-            this.dELIVERYPERSONAREADataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_PERSON_AREA";
-            this.dELIVERYPERSONAREADataGridViewTextBoxColumn.HeaderText = "DELIVERY_PERSON_AREA";
-            this.dELIVERYPERSONAREADataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dELIVERYPERSONAREADataGridViewTextBoxColumn.Name = "dELIVERYPERSONAREADataGridViewTextBoxColumn";
-            this.dELIVERYPERSONAREADataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn
-            // 
-            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn.DataPropertyName = "DELIVERY_PERSON_CONTACTNUMBER";
-            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn.HeaderText = "DELIVERY_PERSON_CONTACTNUMBER";
-            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn.Name = "dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn";
-            this.dELIVERYPERSONCONTACTNUMBERDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dELIVERYPERSONBindingSource1
-            // 
-            this.dELIVERYPERSONBindingSource1.DataMember = "DELIVERY_PERSON";
-            this.dELIVERYPERSONBindingSource1.DataSource = this.dba8ec30yanina001DataSetBindingSource;
-            // 
-            // materialRaisedButton1
-            // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(265, 464);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(304, 41);
-            this.materialRaisedButton1.TabIndex = 5;
-            this.materialRaisedButton1.Text = "SAVE CHANGES";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
-            // 
-            // materialRaisedButton2
-            // 
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(278, 480);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(262, 43);
-            this.materialRaisedButton2.TabIndex = 6;
-            this.materialRaisedButton2.Text = "SAVE CHANGES";
-            this.materialRaisedButton2.UseVisualStyleBackColor = true;
-            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
-            // 
-            // materialRaisedButton3
-            // 
-            this.materialRaisedButton3.Depth = 0;
-            this.materialRaisedButton3.Location = new System.Drawing.Point(271, 465);
-            this.materialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton3.Name = "materialRaisedButton3";
-            this.materialRaisedButton3.Primary = true;
-            this.materialRaisedButton3.Size = new System.Drawing.Size(304, 41);
-            this.materialRaisedButton3.TabIndex = 6;
-            this.materialRaisedButton3.Text = "SAVE CHANGES";
-            this.materialRaisedButton3.UseVisualStyleBackColor = true;
-            this.materialRaisedButton3.Click += new System.EventHandler(this.materialRaisedButton3_Click);
-            // 
-            // materialRaisedButton4
-            // 
-            this.materialRaisedButton4.Depth = 0;
-            this.materialRaisedButton4.Location = new System.Drawing.Point(260, 482);
-            this.materialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton4.Name = "materialRaisedButton4";
-            this.materialRaisedButton4.Primary = true;
-            this.materialRaisedButton4.Size = new System.Drawing.Size(304, 41);
-            this.materialRaisedButton4.TabIndex = 6;
-            this.materialRaisedButton4.Text = "SAVE CHANGES";
-            this.materialRaisedButton4.UseVisualStyleBackColor = true;
-            this.materialRaisedButton4.Click += new System.EventHandler(this.materialRaisedButton4_Click);
-            // 
-            // materialRaisedButton5
-            // 
-            this.materialRaisedButton5.Depth = 0;
-            this.materialRaisedButton5.Location = new System.Drawing.Point(263, 459);
-            this.materialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton5.Name = "materialRaisedButton5";
-            this.materialRaisedButton5.Primary = true;
-            this.materialRaisedButton5.Size = new System.Drawing.Size(304, 41);
-            this.materialRaisedButton5.TabIndex = 6;
-            this.materialRaisedButton5.Text = "SAVE CHANGES";
-            this.materialRaisedButton5.UseVisualStyleBackColor = true;
-            this.materialRaisedButton5.Click += new System.EventHandler(this.materialRaisedButton5_Click);
+            this.cLIENTORDERBindingSource.DataMember = "CLIENT_ORDER";
+            this.cLIENTORDERBindingSource.DataSource = this.dba8ec30yanina001DataSetBindingSource;
             // 
             // tabPage6
             // 
@@ -642,6 +552,17 @@ namespace ADMIN_GORILLA_BURGER
             this.tabPage6.Size = new System.Drawing.Size(844, 531);
             this.tabPage6.TabIndex = 6;
             this.tabPage6.Text = "HISTORY";
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(146, 106);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.RowHeadersWidth = 51;
+            this.dataGridView6.RowTemplate.Height = 24;
+            this.dataGridView6.Size = new System.Drawing.Size(557, 339);
+            this.dataGridView6.TabIndex = 1;
             // 
             // materialSingleLineTextField1
             // 
@@ -662,16 +583,51 @@ namespace ADMIN_GORILLA_BURGER
             this.materialSingleLineTextField1.Click += new System.EventHandler(this.materialSingleLineTextField1_Click);
             this.materialSingleLineTextField1.TextChanged += new System.EventHandler(this.materialSingleLineTextField1_TextChanged);
             // 
-            // dataGridView6
+            // imageList1
             // 
-            this.dataGridView6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(146, 106);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.RowHeadersWidth = 51;
-            this.dataGridView6.RowTemplate.Height = 24;
-            this.dataGridView6.Size = new System.Drawing.Size(557, 339);
-            this.dataGridView6.TabIndex = 1;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "aafdea1e25408dc9e20307a7762f8c2f.jpg");
+            this.imageList1.Images.SetKeyName(1, "home.jpg");
+            this.imageList1.Images.SetKeyName(2, "new-product-icon-9.jpg");
+            this.imageList1.Images.SetKeyName(3, "user-add-icon.png");
+            this.imageList1.Images.SetKeyName(4, "409-4090793_user-with-smartphone-vector-mobile-phone-user-icon.png");
+            this.imageList1.Images.SetKeyName(5, "804ea7f75b09ad6d720bce35485026bd.png");
+            this.imageList1.Images.SetKeyName(6, "1876686-200.png");
+            this.imageList1.Images.SetKeyName(7, "4185164.png");
+            this.imageList1.Images.SetKeyName(8, "images.png");
+            this.imageList1.Images.SetKeyName(9, "307-3074469_history-icon-png-transparent-png.png");
+            this.imageList1.Images.SetKeyName(10, "589-5899778_history-icon-png-history-icon-transparent-png.png");
+            // 
+            // uSERBindingSource
+            // 
+            this.uSERBindingSource.DataMember = "USER";
+            this.uSERBindingSource.DataSource = this.dba8ec30yanina001DataSetBindingSource;
+            // 
+            // cLIENT_ORDERTableAdapter
+            // 
+            this.cLIENT_ORDERTableAdapter.ClearBeforeFill = true;
+            // 
+            // uSERTableAdapter
+            // 
+            this.uSERTableAdapter.ClearBeforeFill = true;
+            // 
+            // pRODUCTTableAdapter
+            // 
+            this.pRODUCTTableAdapter.ClearBeforeFill = true;
+            // 
+            // lIST_PRODUCTSTableAdapter
+            // 
+            this.lIST_PRODUCTSTableAdapter.ClearBeforeFill = true;
+            // 
+            // dELIVERYPERSONBindingSource
+            // 
+            this.dELIVERYPERSONBindingSource.DataMember = "DELIVERY_PERSON";
+            this.dELIVERYPERSONBindingSource.DataSource = this.dba8ec30yanina001DataSetBindingSource;
+            // 
+            // dELIVERY_PERSONTableAdapter
+            // 
+            this.dELIVERY_PERSONTableAdapter.ClearBeforeFill = true;
             // 
             // MainForm
             // 
@@ -683,25 +639,25 @@ namespace ADMIN_GORILLA_BURGER
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.db_a8ec30_yanina001DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dba8ec30yanina001DataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cLIENTORDERBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSERBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRODUCTBindingSource)).EndInit();
-            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dba8ec30yanina001DataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_a8ec30_yanina001DataSet)).EndInit();
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lISTPRODUCTSBindingSource)).EndInit();
+            this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dELIVERYPERSONBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dELIVERYPERSONBindingSource1)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLIENTORDERBindingSource)).EndInit();
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSERBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dELIVERYPERSONBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -719,10 +675,6 @@ namespace ADMIN_GORILLA_BURGER
         private DataGridView dataGridView2;
         private BindingSource uSERBindingSource;
         private db_a8ec30_yanina001DataSetTableAdapters.USERTableAdapter uSERTableAdapter;
-        private DataGridViewTextBoxColumn uSERIDDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn uSERLOGINDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn uSERPASSWORDDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn rOLEIDDataGridViewTextBoxColumn;
         private DataGridView dataGridView3;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

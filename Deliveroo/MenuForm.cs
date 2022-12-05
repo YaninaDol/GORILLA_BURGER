@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Internal;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +15,8 @@ namespace Deliveroo
     public partial class MenuForm : Form
     {
         int count = 0;
-        // private ControllerDB controller;
-        CategoryController categoryController;
-        ProductController productController;
+        private CategoryController categoryController;
+        private ProductController productController;
         public List<PRODUCT> copy; 
         public MenuForm()
         {
@@ -47,10 +47,23 @@ namespace Deliveroo
               
                x += button1.Size.Height + 15;
             }
+            int h = 0;
+
+            var list = productController.products;
+      
 
 
 
-        
+            foreach (var item in list)
+            {
+                ProductUserControl temp = new ProductUserControl(item.PRODUCTID, item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED", item.URL_PICTURE.ToString());
+                temp.Name = item.CATEGORYID.ToString();
+                temp.button1.Click += Temp_Click1;
+                temp.Location = new Point(0, h);
+                this.panel2.Controls.Add(temp);
+                h += temp.Size.Height + 15;
+            }
+
         }
 
         private void Btn_Click(object sender, EventArgs e)
@@ -113,6 +126,52 @@ namespace Deliveroo
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void materialSingleLineTextField1_Click(object sender, EventArgs e)
+        {
+            materialSingleLineTextField1.Text = string.Empty;
+        }
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+              int h = 0;
+            this.panel2.Controls.Clear();
+            if (materialSingleLineTextField1.Text != string.Empty)
+            {
+                var list = productController.products.Where(x => x.PRODUCT_NAME.ToString().ToLower().Contains(materialSingleLineTextField1.Text.ToLower())).ToList();
+
+
+                foreach (var item in list)
+                {
+                    ProductUserControl temp = new ProductUserControl(item.PRODUCTID, item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED", item.URL_PICTURE.ToString());
+                    temp.Name = item.CATEGORYID.ToString();
+                    temp.button1.Click += Temp_Click1;
+                    temp.Location = new Point(0, h);
+                    this.panel2.Controls.Add(temp);
+                    h += temp.Size.Height + 15;
+                }
+
+            }
+
+            else
+            {
+                var list = productController.products;
+
+
+
+
+                foreach (var item in list)
+                {
+                    ProductUserControl temp = new ProductUserControl(item.PRODUCTID, item.PRODUCT_NAME.ToString(), item.PRODUCT_SUBSCRIBE.ToString(), $"{item.PRICE.ToString()} AED", item.URL_PICTURE.ToString());
+                    temp.Name = item.CATEGORYID.ToString();
+                    temp.button1.Click += Temp_Click1;
+                    temp.Location = new Point(0, h);
+                    this.panel2.Controls.Add(temp);
+                    h += temp.Size.Height + 15;
+                }
+            }
         }
     }
 }
