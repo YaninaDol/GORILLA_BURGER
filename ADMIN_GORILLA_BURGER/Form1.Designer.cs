@@ -87,6 +87,7 @@ namespace ADMIN_GORILLA_BURGER
             this.lIST_PRODUCTSTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.LIST_PRODUCTSTableAdapter();
             this.dELIVERYPERSONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dELIVERY_PERSONTableAdapter = new ADMIN_GORILLA_BURGER.db_a8ec30_yanina001DataSetTableAdapters.DELIVERY_PERSONTableAdapter();
+            this.materialCheckBox1 = new MaterialSkin.Controls.MaterialCheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -544,6 +545,7 @@ namespace ADMIN_GORILLA_BURGER
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tabPage6.Controls.Add(this.materialCheckBox1);
             this.tabPage6.Controls.Add(this.dataGridView6);
             this.tabPage6.Controls.Add(this.materialSingleLineTextField1);
             this.tabPage6.ImageKey = "307-3074469_history-icon-png-transparent-png.png";
@@ -629,6 +631,23 @@ namespace ADMIN_GORILLA_BURGER
             // 
             this.dELIVERY_PERSONTableAdapter.ClearBeforeFill = true;
             // 
+            // materialCheckBox1
+            // 
+            this.materialCheckBox1.AutoSize = true;
+            this.materialCheckBox1.Depth = 0;
+            this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialCheckBox1.Location = new System.Drawing.Point(588, 39);
+            this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialCheckBox1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCheckBox1.Name = "materialCheckBox1";
+            this.materialCheckBox1.Ripple = true;
+            this.materialCheckBox1.Size = new System.Drawing.Size(103, 30);
+            this.materialCheckBox1.TabIndex = 2;
+            this.materialCheckBox1.Text = "not ready";
+            this.materialCheckBox1.UseVisualStyleBackColor = true;
+            this.materialCheckBox1.CheckedChanged += new System.EventHandler(this.materialCheckBox1_CheckedChanged);
+            // 
             // MainForm
             // 
             this.ClientSize = new System.Drawing.Size(852, 574);
@@ -655,6 +674,7 @@ namespace ADMIN_GORILLA_BURGER
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTORDERBindingSource)).EndInit();
             this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSERBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dELIVERYPERSONBindingSource)).EndInit();
@@ -717,6 +737,7 @@ namespace ADMIN_GORILLA_BURGER
         private TabPage tabPage6;
         private MaterialSingleLineTextField materialSingleLineTextField1;
         private DataGridView dataGridView6;
+        private MaterialCheckBox materialCheckBox1;
     }
 }
 

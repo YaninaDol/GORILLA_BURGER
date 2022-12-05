@@ -49,12 +49,10 @@ namespace ADMIN_GORILLA_BURGER
             this.cLIENT_ORDERTableAdapter.Fill(this.db_a8ec30_yanina001DataSet.CLIENT_ORDER);
 
             dataGridView6.DataSource = this.db_a8ec30_yanina001DataSet.CLIENT_ORDER;
-            //selectUsers= this.db_a8ec30_yanina001DataSet.USER.Select("ROLEID='1'").CopyToDataTable();
-            //dataGridView2.DataSource = selectUsers;
-            //dataGridView2.Columns["USER_PASSWORD"].Visible= false;
-
+          
             this.db_a8ec30_yanina001DataSet.USER.DefaultView.RowFilter = "ROLEID='1'";
             dataGridView2.DataSource = this.db_a8ec30_yanina001DataSet.USER.DefaultView;
+
             dataGridView2.Columns["USER_PASSWORD"].Visible = false;
 
 
@@ -110,6 +108,21 @@ namespace ADMIN_GORILLA_BURGER
         private void materialSingleLineTextField1_Click(object sender, EventArgs e)
         {
             materialSingleLineTextField1.Text=string.Empty;
+        }
+
+        private void materialCheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(materialCheckBox1.Checked) 
+            {
+               // this.db_a8ec30_yanina001DataSet.CLIENT_ORDER.DefaultView.RowFilter = "STATUS='not ready'";
+                dataGridView6.DataSource = this.db_a8ec30_yanina001DataSet.CLIENT_ORDER.Select("STATUS='not ready'").CopyToDataTable();
+            }
+            else
+            {
+                dataGridView6.DataSource = null;
+                dataGridView6.DataSource = this.db_a8ec30_yanina001DataSet.CLIENT_ORDER;
+                
+            }
         }
     }
 }
