@@ -30,10 +30,13 @@ namespace Deliveroo
 
         private void MenuForm_Load(object sender, EventArgs e)
         {
-          
-            button2.Visible= false; 
-           
-            int x = 191;
+            button2.Visible= true;
+            button2.Enabled= false;
+
+            this.label2.Font = new Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+
+            this.label2.Text = $"Basket: {count}  products";
+            int x = 11;
             foreach (var item in categoryController.categories)
             {
                Button button1 = new Button();
@@ -42,7 +45,7 @@ namespace Deliveroo
                 button1.Click += Btn_Click;
                 button1.Size = new Size(189, 64);
                 button1.Font= new Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-                button1.Location = new Point(65, x);
+                button1.Location = new Point(55, x);
                 this.panel1.Controls.Add(button1);
               
                x += button1.Size.Height + 15;
@@ -90,23 +93,18 @@ namespace Deliveroo
 
         private void Temp_Click1(object sender, EventArgs e)
         {
-           
+            
             this.label2.Font = new Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 
-            this.label2.Text = $"В корзине: {++count}  товаров";
-            this.label2.Click += Label2_Click;
-            this.button2.Visible = true;
+            this.label2.Text = $"Basket: {++count}  products";
+
+            button2.Enabled = true;
 
             ProductUserControl item = (sender as Button).Parent as ProductUserControl;
             PRODUCT pRODUCT = new PRODUCT() {PRODUCTID=item.ID, PRODUCT_NAME = item.label1.Text, PRODUCT_SUBSCRIBE = item.label2.Text, URL_PICTURE = item.pictureBox1.Name.ToString(), CATEGORYID = Convert.ToInt32(item.Name), PRICE = Convert.ToDouble(item.label3.Text.Remove(item.label3.Text.IndexOf('A'))) };
             copy.Add(pRODUCT);  
         }
 
-        private void Label2_Click(object sender, EventArgs e)
-        {
-           
-           
-        }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {

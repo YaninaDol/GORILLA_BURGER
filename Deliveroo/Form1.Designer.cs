@@ -47,9 +47,11 @@ namespace Deliveroo
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
             this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("MV Boli", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(570, 389);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 36);
@@ -68,7 +70,7 @@ namespace Deliveroo
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(293, 49);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Login";
+            this.textBox1.Text = "Enter login";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
             // 
@@ -99,8 +101,10 @@ namespace Deliveroo
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackColor = System.Drawing.Color.Gainsboro;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("MV Boli", 10.8F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(750, 389);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 36);
@@ -112,9 +116,9 @@ namespace Deliveroo
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(81, 52);
+            this.pictureBox2.Location = new System.Drawing.Point(41, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(425, 580);
+            this.pictureBox2.Size = new System.Drawing.Size(467, 658);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 

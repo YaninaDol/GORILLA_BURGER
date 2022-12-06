@@ -114,7 +114,7 @@ namespace ADMIN_GORILLA_BURGER
         {
             if(materialCheckBox1.Checked) 
             {
-               // this.db_a8ec30_yanina001DataSet.CLIENT_ORDER.DefaultView.RowFilter = "STATUS='not ready'";
+             
                 dataGridView6.DataSource = this.db_a8ec30_yanina001DataSet.CLIENT_ORDER.Select("STATUS='not ready'").CopyToDataTable();
             }
             else
