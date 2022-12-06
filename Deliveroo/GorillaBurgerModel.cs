@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 
-namespace Deliveroo
+namespace GORILLA_BURGER
 {
     public partial class GorillaBurgerModel : DbContext
     {

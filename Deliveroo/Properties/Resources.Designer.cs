@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace Deliveroo.Properties
+namespace GORILLA_BURGER.Properties
 {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.

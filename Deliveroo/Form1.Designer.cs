@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Deliveroo
+namespace GORILLA_BURGER
 {
     partial class Form1
     {

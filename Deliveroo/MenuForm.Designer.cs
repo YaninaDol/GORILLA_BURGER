@@ -1,5 +1,5 @@
 ﻿
-namespace Deliveroo
+namespace GORILLA_BURGER
 {
     partial class MenuForm
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Deliveroo
+namespace GORILLA_BURGER
 {
     public partial class ConfirmForm : Form
     {
