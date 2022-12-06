@@ -31,7 +31,7 @@ namespace Deliveroo
         private void MenuForm_Load(object sender, EventArgs e)
         {
           
-
+            button2.Visible= false; 
            
             int x = 191;
             foreach (var item in categoryController.categories)

@@ -254,6 +254,12 @@
     <Compile Include="BasketUserControl.Designer.cs">
       <DependentUpon>BasketUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConfirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmForm.Designer.cs">
+      <DependentUpon>ConfirmForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\CATEGORY.cs" />
     <Compile Include="Controller\CategoryController.cs" />
     <Compile Include="Model\CLIENT_ORDER.cs" />
@@ -296,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BasketUserControl.resx">
       <DependentUpon>BasketUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmForm.resx">
+      <DependentUpon>ConfirmForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

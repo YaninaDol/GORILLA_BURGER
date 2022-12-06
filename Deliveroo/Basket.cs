@@ -16,7 +16,7 @@ namespace Deliveroo
     {
         private ControllerDB controller;
         private List<LIST_PRODUCTS> selectProducts;
-        List<PRODUCT> copy;
+        private List<PRODUCT> copy;
         private USER user;
         public Basket(USER user, List<PRODUCT> copy)
         {
@@ -57,9 +57,7 @@ namespace Deliveroo
                 controller.gorillaBurgerList.CLIENT_ORDER.Add(new CLIENT_ORDER() { ORDERTIME = DateTime.Now, DELIVERY_PERSONID = dELIVERY_PERSON.DELIVERY_PERSONID, LIST_PRODUCTSID = items.LIST_PRODUCTSID });
                 controller.gorillaBurgerList.SaveChanges();
             }
-
-           
-            MessageBox.Show("WAIT YOUR ORDER");
+         
             this.Close();
             
         }

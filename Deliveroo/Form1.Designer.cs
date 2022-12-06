@@ -74,17 +74,16 @@ namespace Deliveroo
             // 
             // textBox2
             // 
-            this.textBox2.BorderStyle = BorderStyle.Fixed3D;
             this.textBox2.AcceptsTab = true;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox2.Location = new System.Drawing.Point(570, 502);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(293, 49);
             this.textBox2.TabIndex = 3;
             this.textBox2.Text = "Password";
-            this.textBox2.PasswordChar = '*';
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
             // 
@@ -123,6 +122,7 @@ namespace Deliveroo
             // 
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button3.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Location = new System.Drawing.Point(651, 574);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(116, 45);
@@ -137,9 +137,10 @@ namespace Deliveroo
             // 
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button4.Location = new System.Drawing.Point(651, 574);
+            this.button4.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(639, 574);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(132, 45);
+            this.button4.Size = new System.Drawing.Size(167, 45);
             this.button4.TabIndex = 10;
             this.button4.Text = "Create account";
             this.button4.UseVisualStyleBackColor = false;
