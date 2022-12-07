@@ -23,7 +23,7 @@ namespace GORILLA_BURGER
         public Form1()
         {
             InitializeComponent();
-            // controller = new ControllerDB(); 
+            controller = new ControllerDB(); 
             userController=new UserController();
 
 
@@ -69,6 +69,7 @@ namespace GORILLA_BURGER
                     else
                     {
                         this.textBox2.BackColor = Color.Red;
+                        MessageBox.Show("Erorr Password");
                     }
                 }
                 else
