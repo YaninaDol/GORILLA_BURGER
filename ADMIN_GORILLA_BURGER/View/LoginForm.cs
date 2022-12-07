@@ -36,6 +36,7 @@ namespace ADMIN_GORILLA_BURGER
                     {
                         MessageBox.Show("Erorr Password");
                         this.materialSingleLineTextField2.Text = "";
+                      
                     }
                 }
                 else
