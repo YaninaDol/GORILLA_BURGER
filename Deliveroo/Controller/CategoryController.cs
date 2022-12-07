@@ -8,10 +8,11 @@ namespace GORILLA_BURGER
 {
     public class CategoryController
     {
-        private GorillaBurgerModel database=new GorillaBurgerModel();
+        private GorillaBurgerModel database;
         public List <CATEGORY> categories ;
         public CategoryController()
         {
+            database = new GorillaBurgerModel();
             categories = new List<CATEGORY>();
             categories.AddRange(database.CATEGORies.ToList());  
         }

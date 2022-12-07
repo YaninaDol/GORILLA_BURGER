@@ -17,13 +17,16 @@ namespace GORILLA_BURGER
        public string login;
        public string password;
        private ControllerDB controller;
+       private UserController userController;
        public USER user;
         
         public Form1()
         {
             InitializeComponent();
-            controller = new ControllerDB(); 
-           
+            // controller = new ControllerDB(); 
+            userController=new UserController();
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -56,11 +59,11 @@ namespace GORILLA_BURGER
             this.password = this.textBox2.Text;
             if(login!=string.Empty&& password!=string.Empty)
             {
-                if(controller.gorillaBurgerList.USERs.ToList().Contains(controller.gorillaBurgerList.USERs.ToList().Where(x=>x.USER_LOGIN==login).FirstOrDefault()))
+                if(userController.users.Contains(userController.users.ToList().Where(x=>x.USER_LOGIN==login).FirstOrDefault()))
                 {
-                    if (controller.gorillaBurgerList.USERs.ToList().Where(x => x.USER_LOGIN == login).FirstOrDefault().USER_PASSWORD == password)
+                    if (userController.users.Where(x => x.USER_LOGIN == login).FirstOrDefault().USER_PASSWORD == password)
                     {
-                        user = controller.gorillaBurgerList.USERs.ToList().Where(x => x.USER_LOGIN == login).FirstOrDefault();
+                        user = userController.users.ToList().Where(x => x.USER_LOGIN == login).FirstOrDefault();
                         this.Close();
                     }
                     else
